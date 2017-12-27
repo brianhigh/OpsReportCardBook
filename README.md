@@ -1,6 +1,7 @@
 # OpsReportCardBook
 
-Compile the OpsReportCard into various book formats. This has only been tested in Ubuntu Linux 14.04.
+Compile the [OpsReportCard](http://www.opsreportcard.com) into various book 
+formats. This has only been tested in Ubuntu Linux 14.04.
 
 ## Quick Start
 
