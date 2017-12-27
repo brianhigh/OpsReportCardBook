@@ -23,7 +23,7 @@ rm -f ?.md ??.md {about,contact,home,tipjar}.md OpsReportCard.{md,pdf,html,epub}
 # Get list of questions
 wget -q -O - "${BASE_URL}/section/1" | \
   xmllint --html --xpath \
-  '(//div[@id = "accordion"]/div/a/span/text() | //div[@id = "accordion"]/h3/a/text())' - 2>/dev/null | \
+    '(//div[@id = "accordion"]/div/a/span/text() | //div[@id = "accordion"]/h3/a/text())' - 2>/dev/null | \
   perl -wpl -e 's/([A-G0-9]+\.)/\n$1/g;' \
     -e 's/([A-G]+\.)/\n## $1/g; s/([0-9]+)\.(.*)(\n|$)/\n### $1\. $2\n\n```\{r child = "$1\.md"\}\n```\n/g;' > q.md
 
@@ -65,4 +65,5 @@ perl -pi -e 's/^\!.*$/http:\/\/www\.opsreportcard\.com\/tipjar/g' tipjar.md
 
 # Convert Markdown to html, pdf, and epub
 Rscript render.R
-pandoc -f html -t epub OpsReportCard.html -o OpsReportCard.epub
+[ -f OpsReportCard.md ] && \
+  pandoc -f markdown -t epub OpsReportCard.md -o OpsReportCard.epub
