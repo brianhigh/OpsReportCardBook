@@ -1,0 +1,35 @@
+---
+title: "The Operations Report Card"
+author: "Tom Limoncelli and Peter Grace"
+date: "http://www.opsreportcard.com"
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: 3
+  html_document:
+    keep_md: yes
+    toc: yes
+    toc_depth: 3
+---
+
+```{r child = 'home.md'}
+```
+
+```{r child = 'q.md'}
+```
+
+## About Us
+
+```{r child = 'about.md'}
+```
+
+## Contact Us
+
+```{r child = 'contact.md'}
+```
+
+## Tip Jar
+
+```{r child = 'tipjar.md'}
+```
+
