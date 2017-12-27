@@ -64,6 +64,6 @@ perl -pi -e 's/^=*//g;' -e 's/^-*//g;' -e 's/^"Ok/## "Ok/g;' \
 perl -pi -e 's/^\!.*$/http:\/\/www\.opsreportcard\.com\/tipjar/g' tipjar.md
 
 # Convert Markdown to html, pdf, and epub
-Rscript render.R
+[ -f OpsReportCard.Rmd ] && Rscript render.R
 [ -f OpsReportCard.md ] && \
   pandoc -f markdown -t epub OpsReportCard.md -o OpsReportCard.epub
