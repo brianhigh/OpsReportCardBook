@@ -14,13 +14,16 @@ formats. This has only been tested on Ubuntu Linux 14.04 and macOS High Sierra.
 bash ./makebook.sh
 ```
 
-## Hints for macOS
+## Dependency Hints for macOS
 
-If you are using macOS, you may want to install the `wget` and `basictex` 
-packages with [brew](https://brew.sh/) before running `makebook.sh`.
+If you are using macOS, you may want to install the `wget`, `pandoc`, 
+`xmlstarlet` and `basictex` packages with [brew](https://brew.sh/) before 
+running `makebook.sh`.
 
 ```
 brew install wget --with-libressl
+brew install pandoc
+brew install xmlstarlet
 brew cask install basictex
 sudo tlmgr update --self
 sudo tlmgr install collection-fontsrecommended
