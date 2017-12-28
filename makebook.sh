@@ -78,6 +78,9 @@ done
 # Convert Markdown to html and pdf
 [ -f OpsReportCard.Rmd ] && Rscript render.R
 
+# Remove extra blank lines in md file
+perl -00 -pi -e 's/\n{3,}//g' OpsReportCard.md
+
 # Use ebook-convert, if you have it, to make the epub, otherwise use pandoc
 if [ -f OpsReportCard.md ]; then \
   which ebook-convert > /dev/null
