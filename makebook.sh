@@ -78,6 +78,12 @@ done
 # Convert Markdown to html and pdf
 [ -f OpsReportCard.Rmd ] && Rscript render.R
 
-# Convert Markdown to epub
-[ -f OpsReportCard.md ] && \
-  pandoc -f markdown -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
+# Use ebook-convert, if you have it, to make the epub, otherwise use pandoc
+if [ -f OpsReportCard.md ]; then \
+  which ebook-convert > /dev/null
+  if [ $? -eq 0 ]; then \
+    ebook-convert OpsReportCard.html OpsReportCard.epub
+  else [ -f OpsReportCard.md ] && \
+    pandoc -f markdown -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
+  fi
+fi
