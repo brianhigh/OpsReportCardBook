@@ -1,7 +1,8 @@
 # OpsReportCardBook
 
 Compile the [OpsReportCard](http://www.opsreportcard.com) into various book 
-formats. This has only been tested on Ubuntu Linux 14.04 and macOS High Sierra.
+formats. This has only been tested on Ubuntu Linux 14.04 and macOS High Sierra. 
+If you are using macOS, you may need to install wget and basictex with `brew`.
 
 ## Quick Start
 
