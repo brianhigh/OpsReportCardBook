@@ -60,12 +60,12 @@ libxmlsec), and [MiKTeX](https://miktex.org/download). From MiKTeK's package
 manager, you will need to install "titling" and "lastpage". And you will need
 to modify your PATH with something like this:
 
----
+```
 set PATH=%PATH%;C:\Program Files\Git\bin;C:\Program Files (x86)\Pandoc;C:\XML\bin
 set PATH=%PATH%;C:\Program Files\R\R-3.4.2\bin;C:\Rtools\bin
 set PATH=%PATH%;C:\Program Files (x86)\GnuWin32\bin
 set PATH=%PATH%;C:\Program Files\MiKTeX 2.9\miktex\bin\x64
----
+```
 
 First try running `makebook.sh` from within RStudio. If that fails, run `render.R` 
 from within RStudio. That should bring a few more packaes into your R environment.
