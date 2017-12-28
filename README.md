@@ -47,7 +47,7 @@ sudo tlmgr install titling
 sudo tlmgr install lastpage
 ```
 
-## Dependency Hints for macOS
+## Dependency Hints for Windows
 
 While it is possible to get this work in Windows, it is time consuming to get 
 all of the dependencies installed. It may not be worth your time. If you 
