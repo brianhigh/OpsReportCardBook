@@ -80,5 +80,4 @@ done
 
 # Convert Markdown to epub
 [ -f OpsReportCard.md ] && \
-  perl -pi -e 's/^(<\/?div|^height=|^class=|^id=).*$//g' OpsReportCard.md && \
   pandoc -f markdown -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
