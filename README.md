@@ -41,7 +41,7 @@ website and that you installed it using the default destinations.
 
 ```
 sudo apt update
-sudo apt install texlive
+sudo apt install texlive texlive-latex-extra
 export RSTUDIO_PANDOC=/usr/lib/rstudio/bin/pandoc
 ```
 
