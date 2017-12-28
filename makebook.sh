@@ -6,7 +6,7 @@
 BASE_URL='http://opsreportcard.com'
 
 # Make sure this is running under Bash
-if [ ! "$BASH_VERSION" ]; then
+if [ ! "$BASH_VERSION" ]; then \
     exec /bin/bash "$0" "$@"
 fi
 
@@ -68,9 +68,7 @@ perl -pi \
 # Convert Markdown to html and pdf
 [ -f OpsReportCard.Rmd ] && Rscript render.R
 
-# Clean up markdown file for macOS
-perl -pi -e 's/^(<\/?div|^height=|^class=|^id=).*$//g' OpsReportCard.md
-
 # Convert Markdown to epub
 [ -f OpsReportCard.md ] && \
+  perl -pi -e 's/^(<\/?div|^height=|^class=|^id=).*$//g' OpsReportCard.md && \
   pandoc -f markdown -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
