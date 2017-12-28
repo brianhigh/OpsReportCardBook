@@ -68,7 +68,12 @@ perl -pi -e 's/^=*//g;' -e 's/^-*//g;' -e 's/^"Ok/## "Ok/g;' \
   -e 's/^(What|Do assessments|How do)/### $1/g;' home.md
 perl -pi \
   -e 's/^\!.*$/\[(Donate)\]\(http:\/\/www\.opsreportcard\.com\/tipjar\)/g;' \
-  -e 's/^(<\/?div|^height=|^class=|^id=).*$//g;' tipjar.md
+  tipjar.md
+
+# Clean up all md content pages of remaining html artifacts (needed on macOS)
+for i in [0-9]*.md {about,contact,home,tipjar}.md; do \
+  perl -pi -e 's/^(<\/?div|^height=|^class=|^id=).*$//g' "$i"
+done
 
 # Convert Markdown to html and pdf
 [ -f OpsReportCard.Rmd ] && Rscript render.R
