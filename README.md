@@ -58,7 +58,7 @@ really want to try it, you will need [Git](https://git-scm.com/download/win),
 [XML utilities](http://xmlsoft.org/sources/win32/) (iconv, zlib, libxml2, and 
 libxmlsec), and [MiKTeX](https://miktex.org/download). From MiKTeK's package 
 manager, you will need to install "titling" and "lastpage". And you will need
-to modify your PATH with something like this:
+to modify your PATH environment variable with the equivalent of this:
 
 ```
 set PATH=%PATH%;C:\Program Files\Git\bin;C:\Program Files (x86)\Pandoc;C:\XML\bin
@@ -67,16 +67,14 @@ set PATH=%PATH%;C:\Program Files (x86)\GnuWin32\bin
 set PATH=%PATH%;C:\Program Files\MiKTeX 2.9\miktex\bin\x64
 ```
 
-Make sure RStudio has the `knitr` and `rmarkdown` packages and dependencies
-installed. Then try running `makebook.sh` from within RStudio's Terminal. 
+Do this in Control Panel System Properties to make sure that RStudio will see it.
+Make sure RStudio has the `knitr` and `rmarkdown` packages and all dependencies
+installed. Then try running `makebook.sh` from within RStudio's Terminal tab in 
+the Console Pane. As we said, this is complicated and not recommended.
 
 ```
 bash ./makebook.sh
 ```
-
-If that fails, run `makebook.sh` from a Gitbash shell. At least, that's what 
-worked for us. As you can see, this is much more complicated than with Linux 
-or macOS, so we do not recommend this approach. Consider yourself warned!
 
 ## Note about Epub Conversion
 
