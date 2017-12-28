@@ -61,9 +61,16 @@ done
 # Clean up home page and tip jar page content
 perl -pi -e 's/^=*//g;' -e 's/^-*//g;' -e 's/^"Ok/## "Ok/g;' \
   -e 's/^(What|Do assessments|How do)/### $1/g;' home.md
-perl -pi -e 's/^\!.*$/http:\/\/www\.opsreportcard\.com\/tipjar/g' tipjar.md
+perl -pi \
+  -e 's/^\!.*$/\[Tip me!\]\(http:\/\/www\.opsreportcard\.com\/tipjar\)/g' \
+  -e 's/^(<\/?div|^height=|^class=|^id=).*$//g' tipjar.md
 
-# Convert Markdown to html, pdf, and epub
+# Convert Markdown to html and pdf
 [ -f OpsReportCard.Rmd ] && Rscript render.R
+
+# Clean up markdown file for macOS
+perl -pi -e 's/^(<\/?div|^height=|^class=|^id=).*$//g' OpsReportCard.md
+
+# Convert Markdown to epub
 [ -f OpsReportCard.md ] && \
   pandoc -f markdown -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
