@@ -38,7 +38,9 @@ done
 perl -pi -e 's/^=*//g;' -e 's/^(What is|How do)/#### $1/g;' 2.md
 
 # Escape filenames in 16.md
-perl -pi -e 's/(\/etc\/[^ ]*\.bak|\/etc\/hosts\.\[.*\])/`$1`/g;' 16.md
+perl -pi \
+  -e 's/(\/etc\/[^ ]*\.bak|\/etc\/hosts\.\[|\])/`$1`/g;' \
+  -e "s/(today's date)/_\$1_/g;" 16.md
 
 # Fix blockquote attribution formatting
 for i in 6.md 12.md; do \
