@@ -39,10 +39,18 @@ and set an environment variable for R before you run `makebook.sh`. The
 environment variable setting assumes that you have installed a recent 
 version of RStudio using the installer available from the RStudio 
 website and that you installed it using the default destinations.
+This environment variable will be ignored if you don't have RStudio.
 
 ```
 sudo apt update
-sudo apt install texlive texlive-latex-extra xmlstarlet libxml2-utils
+sudo apt install pandoc texlive texlive-latex-extra xmlstarlet libxml2-utils
 export RSTUDIO_PANDOC=/usr/lib/rstudio/bin/pandoc
 ```
+
+## Note about Epub Conversion
+
+If you have `ebook-convert` (from the `calibre` package) in your PATH,
+then `makebook.sh` will use this. Otherwise, `pandoc` will be used. The 
+reason `ebook-convert` is preferred is that it does a better job with the 
+table of contents and makes a nicer cover.
 
