@@ -66,4 +66,4 @@ perl -pi -e 's/^\!.*$/http:\/\/www\.opsreportcard\.com\/tipjar/g' tipjar.md
 # Convert Markdown to html, pdf, and epub
 [ -f OpsReportCard.Rmd ] && Rscript render.R
 [ -f OpsReportCard.md ] && \
-  pandoc -f markdown -t epub OpsReportCard.md -o OpsReportCard.epub
+  pandoc -f markdown -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
