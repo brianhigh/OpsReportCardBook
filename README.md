@@ -30,3 +30,18 @@ sudo tlmgr install collection-fontsrecommended
 sudo tlmgr install titling
 sudo tlmgr install lastpage
 ```
+
+## Dependency Hints for Ubuntu Linux
+
+If you are using Ubuntu Linux, you may want to install `texlive` and 
+set an environment variable for R before you run `makebook.sh`. The 
+environment variable setting assumes that you have installed a recent 
+version of RStudio using the installer available from the RStudio 
+website and that you installed it using the default destinations.
+
+```
+sudo apt update
+sudo apt install texlive
+export RSTUDIO_PANDOC=/usr/lib/rstudio/bin/pandoc
+```
+
