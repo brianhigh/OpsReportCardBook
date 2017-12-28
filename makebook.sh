@@ -18,7 +18,7 @@ if [ $? -ne 0 ]; then \
 fi
 
 # Remove old files, if any
-rm -f ?.md ??.md {about,contact,home,tipjar}.md OpsReportCard.{md,pdf,html,epub}
+rm -f *.bak ?.md ??.md {about,contact,home,tipjar}.md OpsReportCard.{md,pdf,html,epub}
 
 # Get list of questions
 wget -q -O - "${BASE_URL}/section/1" | \
@@ -70,9 +70,10 @@ perl -pi \
   -e 's/^\!.*$/\[(Donate)\]\(http:\/\/www\.opsreportcard\.com\/tipjar\)/g;' \
   tipjar.md
 
-# Clean up all md content pages of remaining html artifacts (needed on macOS)
+# Clean up all md content pages of remaining artifacts (needed on macOS and Windows)
 for i in [0-9]*.md {about,contact,home,tipjar}.md; do \
-  perl -pi -e 's/^(<\/?div|^height=|^class=|^id=).*$//g' "$i"
+  perl -pi -e 's/^(<\/?div|^height=|^class=|^id=|^:::).*$//g' "$i"
+  perl -pi -e 's/\\//g' "$i"
 done
 
 # Convert Markdown to html and pdf
@@ -81,8 +82,9 @@ done
 # Clean up md file and make epub file
 if [ -f OpsReportCard.md ]; then \
   # Remove extra blank lines in md file
-  perl -00 -pi -e 's/\n{3,}//g' OpsReportCard.md
-
+  perl -00 -pi -e 's/\r\n/\n/g;' OpsReportCard.md
+  perl -00 -pi -e 's/\n{4,}//g;' OpsReportCard.md
+  
   # Use ebook-convert, if you have it, to make the epub, otherwise use pandoc
   which ebook-convert > /dev/null
   if [ $? -eq 0 -a -f OpsReportCard.html ]; then \
