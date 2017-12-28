@@ -67,11 +67,16 @@ set PATH=%PATH%;C:\Program Files (x86)\GnuWin32\bin
 set PATH=%PATH%;C:\Program Files\MiKTeX 2.9\miktex\bin\x64
 ```
 
-First try running `makebook.sh` from within RStudio. If that fails, run `render.R` 
-from within RStudio. That should bring a few more packaes into your R environment.
-Then you can open a Gitbash shell and run `makebook.sh` from there. At least, that's
-what worked for us. As you can see, this is much more complicated than with Linux or 
-macOS, so we do not recommend this approach. Consider yourself warned!
+Make sure RStudio has the `knitr` and `rmarkdown` packages and dependencies
+installed. Then try running `makebook.sh` from within RStudio's Terminal. 
+
+```
+bash ./makebook.sh
+```
+
+If that fails, run `makebook.sh` from a Gitbash shell. At least, that's what 
+worked for us. As you can see, this is much more complicated than with Linux 
+or macOS, so we do not recommend this approach. Consider yourself warned!
 
 ## Note about Epub Conversion
 
