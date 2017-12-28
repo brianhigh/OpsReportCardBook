@@ -12,7 +12,7 @@ fi
 
 # Check for requirements
 which wget perl xmllint pandoc Rscript > /dev/null
-if test $? -ne 0; then \
+if [ $? -ne 0 ]; then \
   echo "$0 requires wget, perl, xmllint, pandoc, and Rscript"
   exit 1
 fi
@@ -78,15 +78,17 @@ done
 # Convert Markdown to html and pdf
 [ -f OpsReportCard.Rmd ] && Rscript render.R
 
-# Remove extra blank lines in md file
-perl -00 -pi -e 's/\n{3,}//g' OpsReportCard.md
-
-# Use ebook-convert, if you have it, to make the epub, otherwise use pandoc
+# Clean up md file and make epub file
 if [ -f OpsReportCard.md ]; then \
+  # Remove extra blank lines in md file
+  perl -00 -pi -e 's/\n{3,}//g' OpsReportCard.md
+
+  # Use ebook-convert, if you have it, to make the epub, otherwise use pandoc
   which ebook-convert > /dev/null
-  if [ $? -eq 0 ]; then \
+  if [ $? -eq 0 -a -f OpsReportCard.html ]; then \
     ebook-convert OpsReportCard.html OpsReportCard.epub
   else [ -f OpsReportCard.md ] && \
     pandoc -f markdown -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
   fi
 fi
+
