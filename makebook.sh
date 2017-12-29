@@ -82,7 +82,10 @@ Rscript -e \
 
 # Convert Markdown to html with a table of contents
 Rscript -e \
-  'require("rmarkdown"); render("OpsReportCard.Rmd", html_document(toc=TRUE, toc_depth=3, mathjax=NULL, template=NULL))'
+  'require("rmarkdown"); render("OpsReportCard.Rmd", html_document(toc=TRUE, toc_depth=3))'
+# NOTE: If you get an error here because a template folder cannot be found, add these 
+# arguments to the html_document() function call: mathjax=NULL, template=NULL
+# This will make an uglier html document, but it will work fine with ebook-convert, below.
 
 # Use ebook-convert, if you have it, to make the epub, otherwise use pandoc
 which ebook-convert > /dev/null

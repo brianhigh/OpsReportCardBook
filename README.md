@@ -85,6 +85,8 @@ the Console Panel.
 bash ./makebook.sh
 ```
 
+If you have trouble generating the html output, see "NOTE" in `makebook.sh`.
+
 ## Note about Epub Conversion
 
 If you have `ebook-convert` (from the `calibre` package) in your PATH,
