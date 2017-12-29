@@ -25,29 +25,6 @@ fi
 rm -f *.bak ?.md ??.md {about,contact,home,tipjar}.md OpsReportCard.{md,pdf,html,epub}
 
 # ----------------
-# Header Creation
-# ----------------
-
-# Create header yaml for markdown
-(
-cat <<'EOF'
----
-title: "The Operations Report Card"
-author: "Tom Limoncelli and Peter Grace"
-date: "[http://www.opsreportcard.com](http://www.opsreportcard.com)"
----
-EOF
-) > start.md
-
-# Create title text for epub
-(
-cat <<'EOF'
-% The Operations Report Card
-% Tom Limoncelli and Peter Grace
-EOF
-) > title.txt
-
-# ----------------
 # Data Collection
 # ----------------
 
@@ -105,10 +82,33 @@ for i in {q,about,contact,home,tipjar}.md; do \
 done
 
 # ----------------
-# Generate Output
+# Header Creation
 # ----------------
 
-# Combine into a single Markdown file and remove carriage returns and extra lines
+# Create header yaml for markdown
+(
+cat <<'EOF'
+---
+title: "The Operations Report Card"
+author: "Tom Limoncelli and Peter Grace"
+date: "[http://www.opsreportcard.com](http://www.opsreportcard.com)"
+---
+EOF
+) > start.md
+
+# Create title text for epub
+(
+cat <<'EOF'
+% The Operations Report Card
+% Tom Limoncelli and Peter Grace
+EOF
+) > title.txt
+
+# ------------------
+# Output Generation
+# ------------------ 
+
+# Combine Markdown files and remove extra whitespace characters
 cat start.md home.md q.md > OpsReportCard.md
 echo -e "## About Us$(cat about.md)\n\n" >> OpsReportCard.md
 echo -e "## Contact Us$(cat contact.md)\n\n" >> OpsReportCard.md
