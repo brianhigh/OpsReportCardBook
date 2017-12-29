@@ -1,7 +1,7 @@
 ---
 title: "The Operations Report Card"
 author: "Tom Limoncelli and Peter Grace"
-date: "http://www.opsreportcard.com"
+date: "[OpsReportCard](http://www.opsreportcard.com)"
 output:
   pdf_document:
     toc: yes
