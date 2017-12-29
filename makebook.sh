@@ -25,6 +25,29 @@ fi
 rm -f *.bak ?.md ??.md {about,contact,home,tipjar}.md OpsReportCard.{md,pdf,html,epub}
 
 # ----------------
+# Header Creation
+# ----------------
+
+# Create header yaml for markdown
+(
+cat <<'EOF'
+---
+title: "The Operations Report Card"
+author: "Tom Limoncelli and Peter Grace"
+date: "[http://www.opsreportcard.com](http://www.opsreportcard.com)"
+---
+EOF
+) > start.md
+
+# Create title text for epub
+(
+cat <<'EOF'
+% The Operations Report Card
+% Tom Limoncelli and Peter Grace
+EOF
+) > title.txt
+
+# ----------------
 # Data Collection
 # ----------------
 
@@ -76,44 +99,19 @@ perl -pi.bak \
   -e 's/^\!.*$/\[(Donate)\]\(http:\/\/www\.opsreportcard\.com\/tipjar\)/g;' \
   tipjar.md
 
-# Clean up all md content pages of remaining artifacts (needed on macOS and Windows)
-for i in {q,about,contact,home,tipjar}.md; do \
-  perl -pi.bak -e 's/\\//g; s/^(<\/?div|^height=|^class=|^id=|^:::).*$//g;' "$i"
-done
-
-# ----------------
-# Header Creation
-# ----------------
-
-# Create header yaml for markdown
-(
-cat <<'EOF'
----
-title: "The Operations Report Card"
-author: "Tom Limoncelli and Peter Grace"
-date: "[http://www.opsreportcard.com](http://www.opsreportcard.com)"
----
-EOF
-) > start.md
-
-# Create title text for epub
-(
-cat <<'EOF'
-% The Operations Report Card
-% Tom Limoncelli and Peter Grace
-EOF
-) > title.txt
-
-# ------------------
-# Output Generation
-# ------------------ 
-
-# Combine Markdown files and remove extra whitespace characters
+# Combine Markdown files
 cat start.md home.md q.md > OpsReportCard.md
 echo -e "## About Us$(cat about.md)\n\n" >> OpsReportCard.md
 echo -e "## Contact Us$(cat contact.md)\n\n" >> OpsReportCard.md
 echo -e "## Tip Jar$(cat tipjar.md)\n" >> OpsReportCard.md
+
+# Remove remaining artifacts and extra whitespace characters
+perl -pi.bak -e 's/\\//g; s/^(<\/?div|^height=|^class=|^id=|^:::).*$//g;' OpsReportCard.md
 perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' OpsReportCard.md
+
+# ------------------
+# Output Generation
+# ------------------ 
 
 # Convert Markdown to html with a table of contents
 pandoc +RTS -K512m -RTS OpsReportCard.md --to html \
