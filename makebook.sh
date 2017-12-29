@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# Download OpsReportCard website content and convert to markdown, html, etc.
+# Download OpsReportCard website content and convert to markdown, html, pdf, etc.
+
+# ------
+# Setup
+# ------
 
 # Configuration
 BASE_URL='http://opsreportcard.com'
@@ -11,23 +15,43 @@ if [ ! "$BASH_VERSION" ]; then \
 fi
 
 # Check for requirements
-which wget perl xmllint pandoc Rscript > /dev/null
+which wget perl xmllint pandoc pdflatex > /dev/null
 if [ $? -ne 0 ]; then \
-  echo "$0 requires wget, perl, xmllint, pandoc, and Rscript"
+  echo "$0 requires wget, perl, xmllint, pandoc, and pdflatex"
   exit 1
 fi
 
 # Remove old files, if any
 rm -f *.bak ?.md ??.md {about,contact,home,tipjar}.md OpsReportCard.{md,pdf,html,epub}
 
-# Get list of questions
-wget -q -O - "${BASE_URL}/section/1" | \
-  xmllint --html --xpath \
-    '(//div[@id = "accordion"]/div/a/span/text() | //div[@id = "accordion"]/h3/a/text())' - 2>/dev/null | \
-  perl -wpl -e 's/([A-G0-9]+\.)/\n$1/g;' \
-    -e 's/([A-G]+\.)/\n## $1/g; s/([0-9]+)\.(.*)(\n|$)/\n### $1\. $2\n\n```\{r child = "$1\.md"\}\n```\n/g;' > q.md
+# ----------------
+# Header Creation
+# ----------------
 
-# Get articles for each question
+# Create header yaml for markdown
+(
+cat <<'EOF'
+---
+title: "The Operations Report Card"
+author: "Tom Limoncelli and Peter Grace"
+date: "[http://www.opsreportcard.com](http://www.opsreportcard.com)"
+---
+EOF
+) > start.md
+
+# Create title text for epub
+(
+cat <<'EOF'
+% The Operations Report Card
+% Tom Limoncelli and Peter Grace
+EOF
+) > title.txt
+
+# ----------------
+# Data Collection
+# ----------------
+
+# Get articles for each question as markdown
 for i in {1..32}; do \
   wget -q -O - "${BASE_URL}/section/${i}" | \
   xmllint --html --xpath '(//div[@class = "document"])' - 2>/dev/null | \
@@ -35,23 +59,12 @@ for i in {1..32}; do \
   perl -pi.bak -e 's/\\//g;' "${i}.md"
 done
 
-# Redo headings for 2.md
-perl -pi.bak -e 's/^=*//g; s/^(What is|How do)/#### $1/g;' 2.md
-
-# Escape filenames in 16.md
-perl -pi.bak -e 's/(\/etc\/[^ ]*\.bak|\/etc\/hosts\.\[|\])/`$1`/g;' 16.md && \
-  perl -pi.bak -e "s/(today's date)/_\$1_/g;" 16.md
-
-# Fix blockquote attribution formatting
-for i in 6.md 12.md; do \
-  perl -pi.bak -e 's/(-Limoncelli.*)$/  \n> _$1_/g' "$i"
-done
-
-# Cleanup last section of each article
-for i in [0-9]*.md; do \
-  perl -pi.bak -e 's/^(For More Information)/#### $1/g' "$i" && \
-    perl -pi.bak -e 's/^> (For more info)/$1/g' "$i"
-done
+# Get questions as markdown headings and interweave articles 
+wget -q -O - "${BASE_URL}/section/1" | \
+  xmllint --html --xpath \
+    '(//div[@id = "accordion"]/div/a/span/text() | //div[@id = "accordion"]/h3/a/text())' - 2>/dev/null | \
+  perl -wpl -e 's/([A-G0-9]+\.)/\n$1/g; s/([A-G]+\.)/\n## $1/g;' \
+    -e 's/([0-9]+)\.(.*)(\n|$)/"\n### $1\. $2\n\n".`cat $1.md`."\n"/ge;' > q.md
 
 # Get content for home, about, contact, and tipjar pages
 wget -q -O - "${BASE_URL}" | \
@@ -63,6 +76,22 @@ for i in about contact tipjar; do \
     pandoc -s -r html -o "${i}.md"
 done
 
+# -------------
+# Data Cleanup
+# -------------
+
+# Redo headings for question 2
+perl -pi.bak -e 's/^=*//g; s/^(What is|How do)/#### $1/g;' q.md
+
+# Escape filenames in question 16
+perl -pi.bak -e 's/(\/etc\/[^ ]*\.bak|\/etc\/hosts\.\[.*\])/`$1`/g;' q.md
+
+# Fix blockquote attribution formatting for questions 6 and 12
+perl -pi.bak -e 's/(-Limoncelli.*)$/  \n> _$1_/g' q.md
+
+# Cleanup last section of each article
+perl -pi.bak -e 's/^(For More Information)/#### $1/g; s/^> (For more info)/$1/g' q.md
+
 # Clean up home page and tip jar page content
 perl -pi.bak -e 's/^=*//g; s/^-*//g; s/\\//g; s/^"Ok/## "Ok/g;' home.md && \
   perl -pi.bak -e 's/^(What|Do assessments|How do)/### $1/g;' home.md
@@ -71,31 +100,35 @@ perl -pi.bak \
   tipjar.md
 
 # Clean up all md content pages of remaining artifacts (needed on macOS and Windows)
-for i in [0-9]*.md {about,contact,home,tipjar}.md; do \
+for i in {q,about,contact,home,tipjar}.md; do \
   perl -pi.bak -e 's/\\//g; s/^(<\/?div|^height=|^class=|^id=|^:::).*$//g;' "$i"
 done
 
+# ----------------
+# Generate Output
+# ----------------
+
 # Combine into a single Markdown file and remove carriage returns and extra lines
-Rscript -e \
-  'require("knitr"); knit("OpsReportCard.Rmd")' && \
-  perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' OpsReportCard.md
+cat start.md home.md q.md > OpsReportCard.md
+echo -e "## About Us$(cat about.md)\n\n" >> OpsReportCard.md
+echo -e "## Contact Us$(cat contact.md)\n\n" >> OpsReportCard.md
+echo -e "## Tip Jar$(cat tipjar.md)\n" >> OpsReportCard.md
+perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' OpsReportCard.md
 
 # Convert Markdown to html with a table of contents
-Rscript -e \
-  'require("rmarkdown"); render("OpsReportCard.Rmd", html_document(toc=TRUE, toc_depth=3))'
-# NOTE: If you get an error here because a template folder cannot be found, add these 
-# arguments to the html_document() function call: mathjax=NULL, template=NULL
-# This will make an uglier html document, but it will work fine with ebook-convert, below.
+pandoc +RTS -K512m -RTS OpsReportCard.md --to html \
+  --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
+  --output OpsReportCard.html --smart --email-obfuscation none --self-contained \
+  --standalone --section-divs --table-of-contents --toc-depth 3 --no-highlight \
+  --variable 'theme:bootstrap'
 
-# Use ebook-convert, if you have it, to make the epub, otherwise use pandoc
-which ebook-convert > /dev/null
-if [ $? -eq 0 -a -f OpsReportCard.html ]; then \
-  ebook-convert OpsReportCard.html OpsReportCard.epub
-else [ -f OpsReportCard.md ] && \
-  pandoc -f markdown -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
-fi
+# Convert Markdown to epub with a table of contents
+pandoc -f markdown --table-of-contents --toc-depth 3 \
+  -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
 
 # Convert Markdown to pdf with a table of contents
-Rscript -e \
-  'require("rmarkdown"); render("OpsReportCard.Rmd", pdf_document(toc=TRUE, toc_depth=3))'
+pandoc +RTS -K512m -RTS OpsReportCard.md --to latex \
+  --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
+  --output OpsReportCard.pdf --table-of-contents --toc-depth 3 \
+  --highlight-style tango --variable graphics=yes --variable 'geometry:margin=1in'
 
