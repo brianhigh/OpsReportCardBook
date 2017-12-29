@@ -65,6 +65,7 @@ need to modify your PATH environment variable with the equivalent of these chang
 ```
 set PATH=%PATH%;C:\Program Files\Git\bin;C:\XML\bin
 set PATH=%PATH%;C:\Program Files\R\R-3.4.2\bin;C:\Rtools\bin
+set PATH=%PATH%;C:\Program Files\RStudio\bin\pandoc
 set PATH=%PATH%;C:\Program Files (x86)\GnuWin32\bin
 set PATH=%PATH%;C:\Program Files\MiKTeX 2.9\miktex\bin\x64
 ```
