@@ -123,12 +123,12 @@ pandoc +RTS -K512m -RTS OpsReportCard.md --to html \
   --variable 'theme:bootstrap'
 
 # Convert Markdown to epub with a table of contents
-pandoc -f markdown --table-of-contents --toc-depth 3 \
-  -t epub title.txt OpsReportCard.md -o OpsReportCard.epub
+pandoc +RTS -K512m -RTS title.txt OpsReportCard.md --to epub \
+  --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
+  --output OpsReportCard.epub --table-of-contents --toc-depth 3
 
 # Convert Markdown to pdf with a table of contents
 pandoc +RTS -K512m -RTS OpsReportCard.md --to latex \
   --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
   --output OpsReportCard.pdf --table-of-contents --toc-depth 3 \
   --highlight-style tango --variable graphics=yes --variable 'geometry:margin=1in'
-
