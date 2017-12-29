@@ -36,8 +36,7 @@ for i in {1..32}; do \
 done
 
 # Redo headings for 2.md
-perl -pi.bak -e 's/^=*//g;' 2.md && \
-  perl -pi.bak -e 's/^(What is|How do)/#### $1/g;' 2.md
+perl -pi.bak -e 's/^=*//g; s/^(What is|How do)/#### $1/g;' 2.md
 
 # Escape filenames in 16.md
 perl -pi.bak -e 's/(\/etc\/[^ ]*\.bak|\/etc\/hosts\.\[|\])/`$1`/g;' 16.md && \
@@ -83,9 +82,7 @@ Rscript -e \
 
 # Convert Markdown to html with a table of contents
 Rscript -e \
-  'require("rmarkdown"); 
-   render("OpsReportCard.Rmd", 
-     html_document(toc=TRUE, toc_depth=3, mathjax=NULL, template=NULL))'
+  'require("rmarkdown"); render("OpsReportCard.Rmd", html_document(toc=TRUE, toc_depth=3, mathjax=NULL, template=NULL))'
 
 # Use ebook-convert, if you have it, to make the epub, otherwise use pandoc
 which ebook-convert > /dev/null
@@ -97,6 +94,5 @@ fi
 
 # Convert Markdown to pdf with a table of contents
 Rscript -e \
-  'require("rmarkdown"); 
-   render("OpsReportCard.Rmd", pdf_document(toc=TRUE, toc_depth=3))'
+  'require("rmarkdown"); render("OpsReportCard.Rmd", pdf_document(toc=TRUE, toc_depth=3))'
 

@@ -18,27 +18,30 @@ bash ./makebook.sh
 ## Dependency Hints for Ubuntu Linux
 
 If you are using Ubuntu Linux, you may want to install some packages 
-and set an environment variable for R before you run `makebook.sh`. The 
-environment variable setting assumes that you have installed a recent 
-version of RStudio using the installer available from the RStudio 
-website and that you installed it using the default destinations.
-This environment variable will be ignored if you don't have RStudio.
+before you run `makebook.sh`. 
 
 ```
 sudo apt update
-sudo apt install pandoc texlive texlive-latex-extra xmlstarlet libxml2-utils
-export RSTUDIO_PANDOC=/usr/lib/rstudio/bin/pandoc
+sudo apt install texlive texlive-latex-extra xmlstarlet libxml2-utils
+```
+
+Get [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/) 
+from RStudio. When you install the `knitr` and `rmarkdown` packages in 
+RStudio, they will include `pandoc`. You may need to add the folder 
+containing `pandoc` to your PATH before running `makebook.sh`.
+
+```
+export PATH=/usr/lib/rstudio/bin/pandoc:$PATH
 ```
 
 ## Dependency Hints for macOS
 
-If you are using macOS, you may want to install the `wget`, `pandoc`, 
+If you are using macOS, you may want to install the `wget`, 
 `xmlstarlet` and `basictex` packages with [brew](https://brew.sh/) before 
 running `makebook.sh`.
 
 ```
 brew install wget --with-libressl
-brew install pandoc
 brew install xmlstarlet
 brew cask install basictex
 sudo tlmgr update --self
@@ -58,7 +61,7 @@ really want to try it, you will need [Git](https://git-scm.com/download/win),
 [RTools](https://cran.r-project.org/bin/windows/Rtools/index.html), 
 [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/), several 
 [XML utilities](http://xmlsoft.org/sources/win32/) (iconv, zlib, libxml2, and 
-libxmlsec), and [MiKTeX](https://miktex.org/download). From MiKTeK's package 
+libxmlsec), and [MiKTeX](https://miktex.org/download). From MiKTeX's package 
 manager, you will need to install "titling", "lastpage", and "url". And you will 
 need to modify your PATH environment variable with the equivalent of these changes:
 
