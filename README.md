@@ -1,8 +1,8 @@
 # OpsReportCardBook
 
 Compile the [OpsReportCard](http://www.opsreportcard.com) into various book 
-formats. This has only been tested on Ubuntu Linux 14.04 and 17.04, macOS 
-High Sierra, and Windows 10 Enterprise. 
+formats. This has been tested on Ubuntu Linux 14.04 and 17.04, macOS High Sierra, 
+and Windows 10 Enterprise. 
 
 ## Quick Start
 
@@ -49,16 +49,18 @@ sudo tlmgr install lastpage
 
 ## Dependency Hints for Windows
 
-While it is possible to get this work in Windows, it is time consuming to get 
+While it is possible to get this to work in Windows, it is time consuming to get 
 all of the dependencies installed. It may not be worth your time. If you 
 really want to try it, you will need [Git](https://git-scm.com/download/win), 
-[Wget](http://gnuwin32.sourceforge.net/packages/wget.htm), [Pandoc](https://pandoc.org/installing.html#windows), 
-[R](https://cran.r-project.org/bin/windows/base/), [RTools](https://cran.r-project.org/bin/windows/Rtools/index.html), 
+[Wget](http://gnuwin32.sourceforge.net/packages/wget.htm), 
+[Pandoc](https://pandoc.org/installing.html#windows), 
+[R](https://cran.r-project.org/bin/windows/base/), 
+[RTools](https://cran.r-project.org/bin/windows/Rtools/index.html), 
 [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/), several 
 [XML utilities](http://xmlsoft.org/sources/win32/) (iconv, zlib, libxml2, and 
 libxmlsec), and [MiKTeX](https://miktex.org/download). From MiKTeK's package 
 manager, you will need to install "titling" and "lastpage". And you will need
-to modify your PATH environment variable with the equivalent of this:
+to modify your PATH environment variable with the equivalent of these changes:
 
 ```
 set PATH=%PATH%;C:\Program Files\Git\bin;C:\Program Files (x86)\Pandoc;C:\XML\bin
@@ -67,10 +69,13 @@ set PATH=%PATH%;C:\Program Files (x86)\GnuWin32\bin
 set PATH=%PATH%;C:\Program Files\MiKTeX 2.9\miktex\bin\x64
 ```
 
-Do this in Control Panel System Properties to make sure that RStudio will see it.
+Do this in "Edit the system environment variables" (Control Panel, System 
+Properties, Environment Variables, System Variables) to make sure that RStudio 
+will see these PATH changes. 
+
 Make sure RStudio has the `knitr` and `rmarkdown` packages and all dependencies
 installed. Then try running `makebook.sh` from within RStudio's Terminal tab in 
-the Console Pane. As we said, this is complicated and not recommended.
+the Console Panel. 
 
 ```
 bash ./makebook.sh
