@@ -78,12 +78,14 @@ done
 
 # Combine into a single Markdown file and remove carriage returns and extra lines
 Rscript -e \
-  "require('knitr'); knit('OpsReportCard.Rmd')" && \
+  'require("knitr"); knit("OpsReportCard.Rmd")' && \
   perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' OpsReportCard.md
 
 # Convert Markdown to html with a table of contents
 Rscript -e \
-  'require("rmarkdown"); render("OpsReportCard.Rmd", html_document(toc=TRUE, toc_depth=3, mathjax=NULL, template=NULL))'
+  'require("rmarkdown"); 
+   render("OpsReportCard.Rmd", 
+     html_document(toc=TRUE, toc_depth=3, mathjax=NULL, template=NULL))'
 
 # Use ebook-convert, if you have it, to make the epub, otherwise use pandoc
 which ebook-convert > /dev/null
@@ -95,5 +97,6 @@ fi
 
 # Convert Markdown to pdf with a table of contents
 Rscript -e \
-  'require("rmarkdown"); render("OpsReportCard.Rmd", pdf_document(toc=TRUE, toc_depth=3))'
+  'require("rmarkdown"); 
+   render("OpsReportCard.Rmd", pdf_document(toc=TRUE, toc_depth=3))'
 
