@@ -54,7 +54,6 @@ all of the dependencies installed. It may not be worth your time. If you
 really want to try it, you will need [Git](https://git-scm.com/download/win), 
 [Perl](https://www.activestate.com/activeperl/downloads), 
 [Wget](http://gnuwin32.sourceforge.net/packages/wget.htm), 
-[Pandoc](https://pandoc.org/installing.html#windows), 
 [R](https://cran.r-project.org/bin/windows/base/), 
 [RTools](https://cran.r-project.org/bin/windows/Rtools/index.html), 
 [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/), several 
@@ -64,7 +63,7 @@ manager, you will need to install "titling", "lastpage", and "url". And you will
 need to modify your PATH environment variable with the equivalent of these changes:
 
 ```
-set PATH=%PATH%;C:\Program Files\Git\bin;C:\Program Files (x86)\Pandoc;C:\XML\bin
+set PATH=%PATH%;C:\Program Files\Git\bin;C:\XML\bin
 set PATH=%PATH%;C:\Program Files\R\R-3.4.2\bin;C:\Rtools\bin
 set PATH=%PATH%;C:\Program Files (x86)\GnuWin32\bin
 set PATH=%PATH%;C:\Program Files\MiKTeX 2.9\miktex\bin\x64
