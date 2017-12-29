@@ -2,7 +2,7 @@
 
 Compile the [OpsReportCard](http://www.opsreportcard.com) into various book 
 formats. This has been tested on Ubuntu Linux 14.04 and 17.04, macOS High Sierra, 
-and Windows 10 Enterprise. 
+and Windows Server 2008 R2 and Windows 10 Enterprise. 
 
 ## Quick Start
 
@@ -52,6 +52,7 @@ sudo tlmgr install lastpage
 While it is possible to get this to work in Windows, it is time consuming to get 
 all of the dependencies installed. It may not be worth your time. If you 
 really want to try it, you will need [Git](https://git-scm.com/download/win), 
+[Perl](https://www.activestate.com/activeperl/downloads), 
 [Wget](http://gnuwin32.sourceforge.net/packages/wget.htm), 
 [Pandoc](https://pandoc.org/installing.html#windows), 
 [R](https://cran.r-project.org/bin/windows/base/), 
@@ -59,8 +60,8 @@ really want to try it, you will need [Git](https://git-scm.com/download/win),
 [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/), several 
 [XML utilities](http://xmlsoft.org/sources/win32/) (iconv, zlib, libxml2, and 
 libxmlsec), and [MiKTeX](https://miktex.org/download). From MiKTeK's package 
-manager, you will need to install "titling" and "lastpage". And you will need
-to modify your PATH environment variable with the equivalent of these changes:
+manager, you will need to install "titling", "lastpage", and "url". And you will 
+need to modify your PATH environment variable with the equivalent of these changes:
 
 ```
 set PATH=%PATH%;C:\Program Files\Git\bin;C:\Program Files (x86)\Pandoc;C:\XML\bin

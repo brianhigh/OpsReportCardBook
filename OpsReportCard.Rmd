@@ -12,6 +12,11 @@ output:
     toc_depth: 3
 ---
 
+```{r, message=FALSE, echo=FALSE}
+library(knitr)
+opts_chunk$set(cache=FALSE)
+```
+
 ```{r child = 'home.md'}
 ```
 
