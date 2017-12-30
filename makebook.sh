@@ -22,7 +22,8 @@ if [ $? -ne 0 ]; then \
 fi
 
 # Remove old files, if any
-rm -f *.bak ?.md ??.md {about,contact,home,tipjar}.md OpsReportCard.{md,pdf,html,epub}
+rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md \
+  OpsReportCard.{md,pdf,html,epub} title.txt
 
 # ----------------
 # Header Creation
@@ -38,7 +39,7 @@ date: "[http://www.opsreportcard.com](http://www.opsreportcard.com)"
 ---
 
 EOF
-) > start.md
+) > head.md
 
 # Create title text for epub
 (
@@ -101,7 +102,7 @@ perl -pi.bak \
   tipjar.md
 
 # Combine Markdown files
-cat start.md home.md q.md > OpsReportCard.md
+cat head.md home.md q.md > OpsReportCard.md
 echo -e "## About Us\n\n$(cat about.md)\n\n" >> OpsReportCard.md
 echo -e "## Contact Us\n\n$(cat contact.md)\n\n" >> OpsReportCard.md
 echo -e "## Tip Jar\n\n$(cat tipjar.md)\n" >> OpsReportCard.md
@@ -131,3 +132,8 @@ pandoc +RTS -K512m -RTS OpsReportCard.md --to latex \
   --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
   --output OpsReportCard.pdf --table-of-contents --toc-depth 3 \
   --highlight-style tango --variable graphics=yes --variable 'geometry:margin=1in'
+
+# Remove old files, if any
+rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md title.txt
+
+
