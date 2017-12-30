@@ -70,12 +70,12 @@ set PATH=%PATH%;C:\Program Files (x86)\Pandoc;C:\Program Files (x86)\GnuWin32\bi
 set PATH=%PATH%;C:\Program Files\MiKTeX 2.9\miktex\bin\x64
 ```
 
-
 Do this in "Edit the system environment variables" (Control Panel, System 
-Properties, Environment Variables, System Variables) to make sure that RStudio 
-will see these PATH changes. 
+Properties, Environment Variables, System Variables) to make sure that shell 
+sessions will see these PATH changes. 
 
-Then try running `makebook.sh` from within a Git Bash shell.
+From a fresh Git Bash shell, navigate to your local repository folder containing 
+`makebook.sh` and run:
 
 ```
 bash ./makebook.sh
