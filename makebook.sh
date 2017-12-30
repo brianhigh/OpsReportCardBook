@@ -36,6 +36,7 @@ title: "The Operations Report Card"
 author: "Tom Limoncelli and Peter Grace"
 date: "[http://www.opsreportcard.com](http://www.opsreportcard.com)"
 ---
+
 EOF
 ) > start.md
 
@@ -101,9 +102,9 @@ perl -pi.bak \
 
 # Combine Markdown files
 cat start.md home.md q.md > OpsReportCard.md
-echo -e "## About Us$(cat about.md)\n\n" >> OpsReportCard.md
-echo -e "## Contact Us$(cat contact.md)\n\n" >> OpsReportCard.md
-echo -e "## Tip Jar$(cat tipjar.md)\n" >> OpsReportCard.md
+echo -e "## About Us\n\n$(cat about.md)\n\n" >> OpsReportCard.md
+echo -e "## Contact Us\n\n$(cat contact.md)\n\n" >> OpsReportCard.md
+echo -e "## Tip Jar\n\n$(cat tipjar.md)\n" >> OpsReportCard.md
 
 # Remove remaining artifacts and extra whitespace characters
 perl -pi.bak -e 's/\\//g; s/(<\/?div|^height=|^class=|^id=|^:::).*$//g;' OpsReportCard.md
