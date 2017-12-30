@@ -57,8 +57,7 @@ EOF
 for i in {1..32}; do \
   wget -q -O - "${BASE_URL}/section/${i}" | \
   xmllint --html --xpath '(//div[@class = "document"])' - 2>/dev/null | \
-  pandoc -s -r html -o "${i}.md"
-  perl -pi.bak -e 's/\\//g;' "${i}.md"
+  pandoc -s -r html -t markdown | perl -wpl -e 's/\\//g;' > "${i}.md"
 done
 
 # Get questions as markdown headings and interweave articles 
@@ -82,21 +81,19 @@ done
 # Data Cleanup
 # -------------
 
-# Redo headings for question 2
-perl -pi.bak -e 's/^=*//g; s/^(What is|How do)/#### $1/g;' q.md
+perl -pi.bak \
+  -e 's/^=*//g; s/^(What is|How do)/#### $1/g;' \
+  -e 's/(\/etc\/[^ ]*\.bak|\/etc\/hosts\.\[.*\])/`$1`/g;' \
+  -e 's/(-Limoncelli.*)$/  \n> _$1_/g;' \
+  -e 's/^(For More Information)/#### $1/g;' \
+  -e 's/^> (For more info)/$1/g;' \
+  q.md
 
-# Escape filenames in question 16
-perl -pi.bak -e 's/(\/etc\/[^ ]*\.bak|\/etc\/hosts\.\[.*\])/`$1`/g;' q.md
+perl -pi.bak \
+  -e 's/^=*//g; s/^-*//g; s/\\//g; s/^"Ok/## "Ok/g;' \
+  -e 's/^(What|Do assessments|How do)/### $1/g;' \
+  home.md
 
-# Fix blockquote attribution formatting for questions 6 and 12
-perl -pi.bak -e 's/(-Limoncelli.*)$/  \n> _$1_/g' q.md
-
-# Cleanup last section of each article
-perl -pi.bak -e 's/^(For More Information)/#### $1/g; s/^> (For more info)/$1/g' q.md
-
-# Clean up home page and tip jar page content
-perl -pi.bak -e 's/^=*//g; s/^-*//g; s/\\//g; s/^"Ok/## "Ok/g;' home.md && \
-  perl -pi.bak -e 's/^(What|Do assessments|How do)/### $1/g;' home.md
 perl -pi.bak \
   -e 's/^\!.*$/\[(Donate)\]\(http:\/\/www\.opsreportcard\.com\/tipjar\)/g;' \
   tipjar.md
@@ -135,5 +132,4 @@ pandoc +RTS -K512m -RTS OpsReportCard.md --to latex \
 
 # Remove old files, if any
 rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md title.txt
-
 
