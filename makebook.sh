@@ -106,7 +106,7 @@ echo -e "## Contact Us$(cat contact.md)\n\n" >> OpsReportCard.md
 echo -e "## Tip Jar$(cat tipjar.md)\n" >> OpsReportCard.md
 
 # Remove remaining artifacts and extra whitespace characters
-perl -pi.bak -e 's/\\//g; s/^(<\/?div|^height=|^class=|^id=|^:::).*$//g;' OpsReportCard.md
+perl -pi.bak -e 's/\\//g; s/(<\/?div|^height=|^class=|^id=|^:::).*$//g;' OpsReportCard.md
 perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' OpsReportCard.md
 
 # ------------------
