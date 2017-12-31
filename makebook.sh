@@ -57,7 +57,7 @@ EOF
 for i in {1..32}; do \
   wget -q -O - "${BASE_URL}/section/${i}" | \
   xmllint --html --xpath '(//div[@class = "document"])' - 2>/dev/null | \
-  pandoc -s -r html -t markdown | perl -wpl -e 's/\\//g;' > "${i}.md"
+  pandoc -f html -t markdown > "${i}.md"
 done
 
 # Get questions as markdown headings and interweave articles 
@@ -70,11 +70,11 @@ wget -q -O - "${BASE_URL}/section/1" | \
 # Get content for home, about, contact, and tipjar pages
 wget -q -O - "${BASE_URL}" | \
   xmllint --html --xpath '(//div[@id = "DivContent"])' - 2>/dev/null | \
-  pandoc -s -r html -o home.md
+  pandoc -f html -t markdown -o home.md
 for i in about contact tipjar; do \
   wget -q -O - "${BASE_URL}/$i" | \
     xmllint --html --xpath '(//div[@id = "DivContent"])' - 2>/dev/null | \
-    pandoc -s -r html -o "${i}.md"
+    pandoc -f html -t markdown -o "${i}.md"
 done
 
 # -------------
@@ -82,7 +82,7 @@ done
 # -------------
 
 perl -pi.bak \
-  -e 's/^=*//g; s/^(What is|How do)/#### $1/g;' \
+  -e 's/\\//g; s/^=*//g; s/^(What is|How do)/#### $1/g;' \
   -e 's/(\/etc\/[^ ]*\.bak|\/etc\/hosts\.\[.*\])/`$1`/g;' \
   -e 's/(-Limoncelli.*)$/  \n> _$1_/g;' \
   -e 's/^(For More Information)/#### $1/g;' \
@@ -115,7 +115,7 @@ perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' OpsReportCard.md
 # Convert Markdown to html with a table of contents
 pandoc +RTS -K512m -RTS OpsReportCard.md --to html \
   --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
-  --output OpsReportCard.html --smart --email-obfuscation none --self-contained \
+  --output OpsReportCard.html --email-obfuscation none --self-contained \
   --standalone --section-divs --table-of-contents --toc-depth 3 --no-highlight \
   --variable 'theme:bootstrap'
 
