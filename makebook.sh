@@ -65,7 +65,7 @@ wget -q -O - "${BASE_URL}/section/1" | \
   xmllint --html --xpath \
     '(//div[@id = "accordion"]/div/a/span/text() | //div[@id = "accordion"]/h3/a/text())' - 2>/dev/null | \
   perl -wpl -e 's/([A-G0-9]+\.)/\n$1/g; s/([A-G]+\.)/\n## $1/g;' \
-    -e 's/([0-9]+)\.(.*)(\n|$)/"\n### $1\. $2\n\n".`cat $1.md`."\n"/ge;' > q.md
+    -e 's/([0-9]+)\.(.*)(\n|$)/"\n### $1\. $2\n\n".`cat "$1.md"`."\n"/ge;' > q.md
 
 # Get content for home, about, contact, and tipjar pages
 wget -q -O - "${BASE_URL}" | \
