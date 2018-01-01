@@ -26,13 +26,13 @@ fi
 
 # Remove old files, if any
 rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md \
-  OpsReportCard.{md,pdf,html,epub} title.txt
+  OpsReportCard.{md,pdf,html,epub}
 
 # ----------------
 # Header Creation
 # ----------------
 
-# Create header yaml for markdown
+# Create yaml header for markdown
 (
 cat <<EOF
 ---
@@ -43,14 +43,6 @@ date: "$LINK"
 
 EOF
 ) > head.md
-
-# Create title text for epub
-(
-cat <<EOF
-% $TITLE
-% $AUTHOR
-EOF
-) > title.txt
 
 # ----------------
 # Data Collection
@@ -123,7 +115,7 @@ pandoc +RTS -K512m -RTS OpsReportCard.md --to html \
   --variable 'theme:bootstrap'
 
 # Convert Markdown to epub with a table of contents
-pandoc +RTS -K512m -RTS title.txt OpsReportCard.md --to epub \
+pandoc +RTS -K512m -RTS OpsReportCard.md --to epub \
   --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
   --output OpsReportCard.epub --table-of-contents --toc-depth 3
 
@@ -134,5 +126,5 @@ pandoc +RTS -K512m -RTS OpsReportCard.md --to latex \
   --highlight-style tango --variable graphics=yes --variable 'geometry:margin=1in'
 
 # Remove old files, if any
-rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md title.txt
+rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md
 
