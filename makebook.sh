@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Download OpsReportCard website content and convert to markdown, html, pdf, etc.
+# Requires wget, perl, xmllint, pandoc, and pdflatex.
 
 # ------
 # Setup
@@ -11,6 +12,7 @@ BASE_URL='http://opsreportcard.com'
 TITLE='The Operations Report Card'
 AUTHOR='Tom Limoncelli and Peter Grace'
 LINK="[${BASE_URL}](${BASE_URL})"
+OUT='OpsReportCard'
 
 # Make sure this is running under Bash
 if [ ! "$BASH_VERSION" ]; then \
@@ -26,7 +28,7 @@ fi
 
 # Remove old files, if any
 rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md \
-  OpsReportCard.{md,pdf,html,epub}
+  "${OUT}".{md,pdf,html,epub}
 
 # ----------------
 # Header Creation
@@ -95,14 +97,14 @@ perl -pi.bak \
   tipjar.md
 
 # Combine Markdown files
-cat head.md home.md q.md > OpsReportCard.md
-echo -e "## About Us\n\n$(cat about.md)\n\n" >> OpsReportCard.md
-echo -e "## Contact Us\n\n$(cat contact.md)\n\n" >> OpsReportCard.md
-echo -e "## Tip Jar\n\n$(cat tipjar.md)\n" >> OpsReportCard.md
+cat head.md home.md q.md > "${OUT}.md"
+echo -e "## About Us\n\n$(cat about.md)\n\n" >> "${OUT}.md"
+echo -e "## Contact Us\n\n$(cat contact.md)\n\n" >> "${OUT}.md"
+echo -e "## Tip Jar\n\n$(cat tipjar.md)\n" >> "${OUT}.md"
 
 # Remove remaining artifacts and extra whitespace characters
-perl -pi.bak -e 's/\\//g; s/(<\/?div|^height=|^class=|^id=|^:::).*$//g;' OpsReportCard.md
-perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' OpsReportCard.md
+perl -pi.bak -e 's/\\//g; s/(<\/?div|^height=|^class=|^id=|^:::).*$//g;' "${OUT}.md"
+perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' "${OUT}.md"
 
 # ------------------
 # Output Generation
@@ -110,7 +112,7 @@ perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' OpsReportCard.md
 
 # Convert Markdown to html, epub, and pdf with a table of contents
 for suffix in html epub pdf; do \
-  pandoc -s --toc -o "OpsReportCard.${suffix}" 'OpsReportCard.md'
+  pandoc -s --toc -o "${OUT}.${suffix}" "${OUT}.md"
 done
 
 # Remove old files, if any
