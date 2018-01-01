@@ -8,6 +8,9 @@
 
 # Configuration
 BASE_URL='http://opsreportcard.com'
+TITLE='The Operations Report Card'
+AUTHOR='Tom Limoncelli and Peter Grace'
+LINK="[${BASE_URL}](${BASE_URL})"
 
 # Make sure this is running under Bash
 if [ ! "$BASH_VERSION" ]; then \
@@ -31,11 +34,11 @@ rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md \
 
 # Create header yaml for markdown
 (
-cat <<'EOF'
+cat <<EOF
 ---
-title: "The Operations Report Card"
-author: "Tom Limoncelli and Peter Grace"
-date: "[http://www.opsreportcard.com](http://www.opsreportcard.com)"
+title: "$TITLE"
+author: "$AUTHOR"
+date: "$LINK"
 ---
 
 EOF
@@ -43,9 +46,9 @@ EOF
 
 # Create title text for epub
 (
-cat <<'EOF'
-% The Operations Report Card
-% Tom Limoncelli and Peter Grace
+cat <<EOF
+% $TITLE
+% $AUTHOR
 EOF
 ) > title.txt
 
