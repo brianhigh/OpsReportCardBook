@@ -14,7 +14,7 @@ LINK="[${BASE_URL}](${BASE_URL})"
 
 # Make sure this is running under Bash
 if [ ! "$BASH_VERSION" ]; then \
-    exec /bin/bash "$0" "$@"
+  exec /bin/bash "$0" "$@"
 fi
 
 # Check for requirements
@@ -59,7 +59,8 @@ done
 wget -q -O - "${BASE_URL}/section/1" | \
   xmllint --html --xpath \
     '(//div[@id = "accordion"]/div/a/span/text() | //div[@id = "accordion"]/h3/a/text())' - 2>/dev/null | \
-  perl -wpl -e 's/([A-G0-9]+\.)/\n$1/g; s/([A-G]+\.)/\n## $1/g;' \
+  perl -wpl \
+    -e 's/([A-G0-9]+\.)/\n$1/g; s/([A-G]+\.)/\n## $1/g;' \
     -e 's/([0-9]+)\.(.*)(\n|$)/"\n### $1\. $2\n\n".`cat "$1.md"`."\n"/ge;' > q.md
 
 # Get content for home, about, contact, and tipjar pages
@@ -107,23 +108,10 @@ perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' OpsReportCard.md
 # Output Generation
 # ------------------ 
 
-# Convert Markdown to html with a table of contents
-pandoc +RTS -K512m -RTS OpsReportCard.md --to html \
-  --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
-  --output OpsReportCard.html --email-obfuscation none --self-contained \
-  --standalone --section-divs --table-of-contents --toc-depth 3 --no-highlight \
-  --variable 'theme:bootstrap'
-
-# Convert Markdown to epub with a table of contents
-pandoc +RTS -K512m -RTS OpsReportCard.md --to epub \
-  --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
-  --output OpsReportCard.epub --table-of-contents --toc-depth 3
-
-# Convert Markdown to pdf with a table of contents
-pandoc +RTS -K512m -RTS OpsReportCard.md --to latex \
-  --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash \
-  --output OpsReportCard.pdf --table-of-contents --toc-depth 3 \
-  --highlight-style tango --variable graphics=yes --variable 'geometry:margin=1in'
+# Convert Markdown to html, epub, and pdf with a table of contents
+for suffix in html epub pdf; do \
+  pandoc -s --toc -o "OpsReportCard.${suffix}" 'OpsReportCard.md'
+done
 
 # Remove old files, if any
 rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md
