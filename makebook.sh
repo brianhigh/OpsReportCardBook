@@ -112,7 +112,8 @@ perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' "${OUT}.md"
 
 # Convert Markdown to html, epub, and pdf with a table of contents
 for suffix in html epub pdf; do \
-  pandoc -s --toc -o "${OUT}.${suffix}" "${OUT}.md"
+  pandoc -s --toc --variable 'geometry:margin=1in' -o "${OUT}.${suffix}" \
+    "${OUT}.md"
 done
 
 # Remove old files, if any
