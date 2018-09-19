@@ -32,7 +32,7 @@ sudo apt install pandoc texlive texlive-latex-extra xmlstarlet libxml2-utils
 
 If you are using macOS, you may want to install the `wget`, `pandoc`, 
 `xmlstarlet` and `basictex` packages with [brew](https://brew.sh/) before 
-running `makebook.sh`.
+running `makebook.sh`. 
 
 ```
 brew install wget --with-libressl
