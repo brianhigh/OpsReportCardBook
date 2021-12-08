@@ -105,6 +105,7 @@ echo -e "## Tip Jar\n\n$(cat tipjar.md)\n" >> "${OUT}.md"
 # Remove remaining artifacts and extra whitespace characters
 perl -pi.bak -e 's/\\//g; s/(<\/?div|^height=|^class=|^id=|^:::).*$//g;' "${OUT}.md"
 perl -00 -pi.bak -e 's/\r\n/\n/g; s/\n{4,}//g;' "${OUT}.md"
+perl -00 -pi.bak -e 's/\{.reference\n?\s+\.external\}//g;' "${OUT}.md"
 
 # Transform links from my.safaribooksonline.com to learning.oreilly.com
 perl -pi.bak -e 's/https?:\/\/my\.safaribooksonline\.com\/.*\/(9780321545275)/https:\/\/learning.oreilly.com\/library\/view\/the-practice-of\/$1/g;' "${OUT}.md"

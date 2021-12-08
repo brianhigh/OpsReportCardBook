@@ -58,21 +58,15 @@ For More Information
 
 For more info, see the below links:
 
--   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20){.reference
-    .external} - p. 26, [Chapter 2: Focus Versus Interruptions /
+-   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20) - p. 26, [Chapter 2: Focus Versus Interruptions /
     Delegate, Record,
-    Do](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch02.html#timemgmt-CHP-2-SECT-5.1){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 28, [Chapter 2: Climb Out of the Hole / 2.1.1 Use a
+    Do](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch02.html#timemgmt-CHP-2-SECT-5.1)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 28, [Chapter 2: Climb Out of the Hole / 2.1.1 Use a
     Trouble-Ticket
-    System](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch02.html#ch02lev2sec1){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 354, [Chapter 13: Helpdesks / 13.1.10 Supply
+    System](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch02.html#ch02lev2sec1)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 354, [Chapter 13: Helpdesks / 13.1.10 Supply
     Request-Tracking
-    Software](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch13.html#ch13lev2sec10){.reference
-    .external}
+    Software](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch13.html#ch13lev2sec10)
 
 ### 2.  Are "the 3 empowering policies" defined and published?
 
@@ -172,20 +166,14 @@ For More Information
 
 For more info, see the below links:
 
--   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20){.reference
-    .external} - p. 21, [Chapter 2: Focus Versus Interruptions /
+-   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20) - p. 21, [Chapter 2: Focus Versus Interruptions /
     Directing Interruptions Away from
-    You](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch02.html#timemgmt-CHP-2-SECT-4){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 27, [Chapter 2: Climb Out of the
-    Hole](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch02.html#ch02sb01){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 820, [Chapter 33: A Guide for Technical Managers /
+    You](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch02.html#timemgmt-CHP-2-SECT-4)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 27, [Chapter 2: Climb Out of the
+    Hole](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch02.html#ch02sb01)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 820, [Chapter 33: A Guide for Technical Managers /
     33.1.1.1 Priorities and
-    Resources](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev3sec1){.reference
-    .external}
+    Resources](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev3sec1)
 
 ### 3.  Does the team record monthly metrics?
 
@@ -245,15 +233,11 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - Chapter 22: Service Monitoring
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - Chapter 5: Services / 5.1.13 Monitoring
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - Chapter 31: Perception and Visibility / The System
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 22: Service Monitoring
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 5: Services / 5.1.13 Monitoring
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 31: Perception and Visibility / The System
     Status Web Page
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - Chapter 33: A Guide for Technical Managers / Sell Your
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 33: A Guide for Technical Managers / Sell Your
     Department to Senior Management
 
 ## B. Modern Team Practices
@@ -319,14 +303,10 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 241, [Chapter 9:
-    Documentation](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch09.html){.reference
-    .external}
--   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20){.reference
-    .external} - p. 145, [Chapter 12:
-    Documentation](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch12.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 241, [Chapter 9:
+    Documentation](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch09.html)
+-   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20) - p. 145, [Chapter 12:
+    Documentation](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch12.html)
 
 ### 5.  Do you have a password safe?
 
@@ -343,10 +323,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 271, [Chapter 11: Security
-    Policy](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 271, [Chapter 11: Security
+    Policy](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html)
 
 ### 6.  Is your team's code kept in a source code control system?
 
@@ -373,10 +351,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20){.reference
-    .external} - p. 174, [Chapter 13: Automation /
-    xed](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch13.html){.reference
-    .external}
+-   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20) - p. 174, [Chapter 13: Automation /
+    xed](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch13.html)
 
 ### 7.  Does your team use a bug-tracking system for their own code?
 
@@ -394,14 +370,10 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 343, [Chapter 33: A Guide for Technical Managers /
-    Priorities](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev3sec1){.reference
-    .external}
--   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20){.reference
-    .external} - p. 101, [Chapter 8: Prioritization /
-    Prioritization](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch08.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 343, [Chapter 33: A Guide for Technical Managers /
+    Priorities](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev3sec1)
+-   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20) - p. 101, [Chapter 8: Prioritization /
+    Prioritization](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch08.html)
 
 ### 8.  In your bugs/tickets, does stability have a higher priority than new features?
 
@@ -437,14 +409,10 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 343, [Chapter 33: A Guide for Technical Managers /
-    Priorities](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev3sec1){.reference
-    .external}
--   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20){.reference
-    .external} - p. 101, [Chapter 8: Prioritization /
-    Prioritization](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch08.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 343, [Chapter 33: A Guide for Technical Managers /
+    Priorities](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev3sec1)
+-   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20) - p. 101, [Chapter 8: Prioritization /
+    Prioritization](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch08.html)
 
 ### 9.  Does your team write "design docs?"
 
@@ -490,10 +458,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 241, [Chapter 9:
-    Documentation](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch09.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 241, [Chapter 9:
+    Documentation](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch09.html)
 
 ### 10.  Do you have a "post-mortem" process?
 
@@ -538,10 +504,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 492, [Chapter 20: Maintenance Windows / 20.1.13
-    Postmortem](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch20.html#ch20lev2sec13){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 492, [Chapter 20: Maintenance Windows / 20.1.13
+    Postmortem](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch20.html#ch20lev2sec13)
 
 ## C. Operational Practices
 
@@ -630,10 +594,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 241, [Chapter 9:
-    Documentation](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch09.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 241, [Chapter 9:
+    Documentation](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch09.html)
 
 ### 12.  Does each service have appropriate monitoring?
 
@@ -649,19 +611,13 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 523, [Chapter 22: Service
-    Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch22.html){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 765, [Chapter 31: Perception and Visibility / The
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 523, [Chapter 22: Service
+    Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch22.html)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 765, [Chapter 31: Perception and Visibility / The
     System Status Web
-    Page](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch31.html#ch31lev2sec5){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 119, [Chapter 5: Services / 5.1.13
-    Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch05.html#ch05lev2sec13){.reference
-    .external}
+    Page](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch31.html#ch31lev2sec5)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 119, [Chapter 5: Services / 5.1.13
+    Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch05.html#ch05lev2sec13)
 
 ### 13.  Do you have a pager rotation schedule?
 
@@ -739,10 +695,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 435, [Chapter 18: Server
-    Upgrades](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch18.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 435, [Chapter 18: Server
+    Upgrades](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch18.html)
 
 ### 15.  Do roll-outs to many machines have a "canary process?"
 
@@ -788,10 +742,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 56, [Chapter 3: Workstations / 3.1.2.2 One, Some,
-    Many](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html#ch03lev3sec7){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 56, [Chapter 3: Workstations / 3.1.2.2 One, Some,
+    Many](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html#ch03lev3sec7)
 
 ## D. Automation Practices
 
@@ -944,20 +896,14 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 41, [Chapter 3:
-    Workstations](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 32, [Chapter 2: Climb Out of the Hole / 2.1.4 Start
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 41, [Chapter 3:
+    Workstations](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 32, [Chapter 2: Climb Out of the Hole / 2.1.4 Start
     Every New Host in a Known
-    State](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch02.html#ch02lev2sec4){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 288, [Chapter 11: Security Policy / Case Study:
+    State](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch02.html#ch02lev2sec4)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 288, [Chapter 11: Security Policy / Case Study:
     Security Though Good
-    Infrastructure](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11sb14){.reference
-    .external}
+    Infrastructure](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11sb14)
 
 ### 21.  Can you automatically patch software across your entire fleet?
 
@@ -994,11 +940,9 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 41, [Chapter 3: Workstations / 3.1.2 Updating the
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 41, [Chapter 3: Workstations / 3.1.2 Updating the
     System Software and
-    Applications](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html#ch03lev2sec2){.reference
-    .external}
+    Applications](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html#ch03lev2sec2)
 
 ### 22.  Do you have a PC refresh policy?
 
@@ -1051,10 +995,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p.41, [Chapter 3:
-    Workstations](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p.41, [Chapter 3:
+    Workstations](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html)
 
 ## F. Disaster Preparation Practices
 
@@ -1146,10 +1088,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 83, [Chapter 4: Servers / Mirror Boot
-    Disks](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch04.html#ch04lev2sec9){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 83, [Chapter 4: Servers / Mirror Boot
+    Disks](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch04.html#ch04lev2sec9)
 
 ### 24.  Is the network core N+1?
 
@@ -1184,10 +1124,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 187, [Chapter 7:
-    Networks](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch07.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 187, [Chapter 7:
+    Networks](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch07.html)
 
 ### 25.  Are your backups automated?
 
@@ -1206,8 +1144,7 @@ Situation (1) is solved by snapshots in the short-term but not in the
 long term. Sometimes a file is deleted and needs to be restored much
 later. Simple snapshots will not help. RAID does not help in this
 situation. [RAID is not a backup
-mechanism](http://fishbowl.pastiche.org/2009/01/06/backups_a_cautionary_tale/){.reference
-.external}. If someone deletes a file by mistake, RAID will dutifully
+mechanism](http://fishbowl.pastiche.org/2009/01/06/backups_a_cautionary_tale/). If someone deletes a file by mistake, RAID will dutifully
 replicate that mistake to all mirrors. You will have a Redundant Array
 of Incorrect Data.
 
@@ -1233,10 +1170,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 619, [Chapter 26: Backup and
-    Restore](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch26.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 619, [Chapter 26: Backup and
+    Restore](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch26.html)
 
 ### 26.  Are your disaster recovery plans tested periodically?
 
@@ -1287,14 +1222,10 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 261, [Chapter 10: Disaster Recovery and Data
-    Integrity](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch10.html){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 473, [Chapter 20: Maintenance
-    Windows](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch20.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 261, [Chapter 10: Disaster Recovery and Data
+    Integrity](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch10.html)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 473, [Chapter 20: Maintenance
+    Windows](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch20.html)
 
 ### 27.  Do machines in your data center have remote power / console access?
 
@@ -1310,10 +1241,8 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 261, [Chapter 10: Disaster Recovery and Data
-    Integrity](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch10.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 261, [Chapter 10: Disaster Recovery and Data
+    Integrity](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch10.html)
 
 ## G. Security Practices
 
@@ -1384,18 +1313,14 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 284, [Chapter 11: Security Policy / State of
-    Security](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11sb11){.reference
-    .external}
--   [ES](http://everythingsysadmin.com){.reference .external} - April
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 284, [Chapter 11: Security Policy / State of
+    Security](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11sb11)
+-   [ES](http://everythingsysadmin.com) - April
     2011, [Not being attacked? Your network must be
-    down.](http://everythingsysadmin.com/2011/04/apt.html){.reference
-    .external}
--   [ES](http://everythingsysadmin.com){.reference .external} - April
+    down.](http://everythingsysadmin.com/2011/04/apt.html)
+-   [ES](http://everythingsysadmin.com) - April
     2011, [Yes, malware scanners on your servers
-    too!](http://everythingsysadmin.com/2011/04/yes-malware-scanners-on-your-s.html){.reference
-    .external}
+    too!](http://everythingsysadmin.com/2011/04/yes-malware-scanners-on-your-s.html)
 
 ### 29.  Do you have a written security policy?
 
@@ -1411,20 +1336,14 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 293, [Chapter 11: Security Policy /
-    11.0](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 293, [Chapter 11: Security Policy / 11.1.2 Document
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 293, [Chapter 11: Security Policy /
+    11.0](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 293, [Chapter 11: Security Policy / 11.1.2 Document
     the Company's Security
-    Policy](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#page_276){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 293, [Chapter 11: Security Policy / 11.1.3.5
+    Policy](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#page_276)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 293, [Chapter 11: Security Policy / 11.1.3.5
     Authorization
-    Matrix](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev3sec11){.reference
-    .external}
+    Matrix](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev3sec11)
 
 ### 30.  Do you submit to periodic security audits?
 
@@ -1435,16 +1354,12 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 298, [Chapter 11: Security Policy / 11.1.3.7
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 298, [Chapter 11: Security Policy / 11.1.3.7
     Internal
-    Audits](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev3sec13){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 308, [Chapter 11: Security Policy / 11.1.4.3
+    Audits](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev3sec13)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 308, [Chapter 11: Security Policy / 11.1.4.3
     External
-    Audits](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev3sec16){.reference
-    .external}
+    Audits](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev3sec16)
 
 ### 31.  Can a user's account be disabled on all systems in 1 hour?
 
@@ -1468,14 +1383,10 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 223, [Chapter 8:
-    Namespaces](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch08.html){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 899, [Chapter 36: Firing System
-    Administrators](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch36.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 223, [Chapter 8:
+    Namespaces](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch08.html)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 899, [Chapter 36: Firing System
+    Administrators](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch36.html)
 
 ### 32.  Can you change all privileged (root) passwords in 1 hour?
 
@@ -1496,14 +1407,10 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 223, [Chapter 8:
-    Namespaces](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch08.html){.reference
-    .external}
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20){.reference
-    .external} - p. 899, [Chapter 36: Firing System
-    Administrators](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch36.html){.reference
-    .external}
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 223, [Chapter 8:
+    Namespaces](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch08.html)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 899, [Chapter 36: Firing System
+    Administrators](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch36.html)
 
 ## About Us
 
