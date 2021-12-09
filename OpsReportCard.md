@@ -233,12 +233,14 @@ For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 22: Service Monitoring
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 5: Services / 5.1.13 Monitoring
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 31: Perception and Visibility / The System
-    Status Web Page
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 33: A Guide for Technical Managers / Sell Your
-    Department to Senior Management
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - [Chapter 22: Service 
+    Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch22.html)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - [Chapter 5: Services / 5.1.13 
+    Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch05.html#ch05lev2sec13)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - [Chapter 31: Perception and Visibility / The System Status Web
+    Page](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch31.html#ch31lev2sec5)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - [Chapter 33: A Guide for Technical Managers / Sell Your Department to 
+    Senior Management](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev2sec6)
 
 ## B. Modern Team Practices
 
