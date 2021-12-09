@@ -1039,7 +1039,7 @@ expect a failure every week. Are you really planning to spend an entire
 day restoring data from tape that often?
 
 My rule of thumb is simple: For small servers the boot disk should be
-mirrrored and any disk with user data should be RAID1 or higher.
+mirrored and any disk with user data should be RAID1 or higher.
 
 Boot disk: I recommend mirroring the boot disk of every server because
 it is usually impossible to rebuild from scratch. Server boot disks tend
@@ -1056,7 +1056,7 @@ system that lets people in and out of the buildings is exactly the
 worst-case scenario that needs a mirrored boot disk.
 
 Yes, you could probably rebuild such a server in a day if you are lucky,
-but a RAID1 controler is less than that in salary if you work minimum
+but a RAID1 controller is less than that in salary if you work minimum
 wage.
 
 User data: I recommend RAID1 or higher for user data just because it is
@@ -1066,7 +1066,7 @@ professionally negligent to use RAID5 on such disks. RAID6 or RAID10 is
 the minimum; at least for now, but I digress.
 
 The exceptions to all this is any place where the service can keep
-running if individual components die whether the redundency is at the
+running if individual components die whether the redundancy is at the
 disk level, the machine level, or the data center level. Also, data that
 can be reconstructed from scratch within the SLA. Here are some
 examples:
@@ -1131,7 +1131,7 @@ See below links for more information on this topic:
 
 ### 25.  Are your backups automated?
 
-s question assumes you are doing backups. You are doing backups, right?
+This question assumes you are doing backups. You are doing backups, right?
 
 You need backups for 4 reasons:
 
@@ -1421,7 +1421,7 @@ administrator. His best known books include Time Management for System
 Administrators (OReilly) and The Practice of System and Network
 Administration (Addison-Wesley). In 2005 he received the SAGE
 Outstanding Achievement Award. He works in New York City at Stack
-Exchange, home of ServerFault.com and StackOverflow.com. Previously hes
+Exchange, home of ServerFault.com and StackOverflow.com. Previously he's
 worked at small and large companies including Google, Bell Labs /
 Lucent, AT&T. <http://EverythingSysadmin.com> is his blog. His new book,
 "The Practice of Cloud Administration" is due out in September 2014.
