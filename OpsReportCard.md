@@ -1340,7 +1340,7 @@ See below links for more information on this topic:
     11.0](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html)
 -   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 293, [Chapter 11: Security Policy / 11.1.2 Document
     the Company's Security
-    Policy](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#page_276)
+    Policy](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev2sec2)
 -   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 293, [Chapter 11: Security Policy / 11.1.3.5
     Authorization
     Matrix](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev3sec11)
