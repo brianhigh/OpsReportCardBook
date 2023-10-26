@@ -57,7 +57,7 @@ for i in {1..32}; do \
   pandoc -f html -t markdown > "${i}.md"
 done
 
-# Get questions as markdown headings and interweave articles 
+# Get questions as markdown headings and interweave articles
 wget -q -O - "${BASE_URL}/section/1" | \
   xmllint --html --xpath \
     '(//div[@id = "accordion"]/div/a/span/text() | //div[@id = "accordion"]/h3/a/text())' - 2>/dev/null | \
@@ -141,10 +141,13 @@ perl -pi.bak -e 's/focus-versus-interruptions\/21/ch02.html#timemgmt-CHP-2-SECT-
 perl -pi.bak -e 's/documentation\/timemgmt-chp-12/ch12.html/g;' "${OUT}.md"
 perl -pi.bak -e 's/prioritization\/timemgmt-chp-8/ch08.html/g;' "${OUT}.md"
 perl -pi.bak -e 's/automation\/174/ch13.html/g;' "${OUT}.md"
+perl -pi.bak -e 's/^.*\.title\}$//g;' "${OUT}.md"
+perl -pi.bak -e 's/^# ("Ok, but... where do I start\?)"$/## \1/g;' "${OUT}.md"
+perl -pi.bak -e 's/^# (How do users get help|What is an emergency|What is supported)\?$/#### \1\?/g;' "${OUT}.md"
 
 # ------------------
 # Output Generation
-# ------------------ 
+# ------------------
 
 # Convert Markdown to html, epub, and pdf with a table of contents
 for suffix in html epub pdf; do \
@@ -154,4 +157,3 @@ done
 
 # Remove old files, if any
 rm -f *.bak ?.md ??.md {head,about,contact,home,tipjar}.md
-
