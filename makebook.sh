@@ -142,7 +142,7 @@ perl -pi.bak -e 's/documentation\/timemgmt-chp-12/ch12.html/g;' "${OUT}.md"
 perl -pi.bak -e 's/prioritization\/timemgmt-chp-8/ch08.html/g;' "${OUT}.md"
 perl -pi.bak -e 's/automation\/174/ch13.html/g;' "${OUT}.md"
 perl -pi.bak -e 's/^.*\.title\}$//g;' "${OUT}.md"
-perl -pi.bak -e 's/^# ("Ok, but... where do I start\?)"$/## \1/g;' "${OUT}.md"
+perl -pi.bak -e 's/^# ("Ok, but... where do I start\?")$/## \1/g;' "${OUT}.md"
 perl -pi.bak -e 's/^# (How do users get help|What is an emergency|What is supported)\?$/#### \1\?/g;' "${OUT}.md"
 
 # ------------------
