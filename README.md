@@ -1,8 +1,8 @@
 # OpsReportCardBook
 
 Compile the [OpsReportCard](http://www.opsreportcard.com) into various book
-formats. This has been tested on Ubuntu Linux 14.04 and 17.04, macOS Sonoma,
-and Windows Server 2008 R2 and Windows 10 Enterprise. If this were refactored
+formats. This has been tested on Ubuntu Linux 14.04, 17.04, and 22.04,
+macOS Sonoma, and Windows 10 Enterprise. If this were refactored
 into something more portable like a Python script, it would be easier to run,
 but for now it is a Bash script that calls several utilities and Perl.
 To support PDF output, we use pdflatex, which requires a LaTeX environment. See below.
@@ -58,11 +58,35 @@ The easiest way will be to use [Windows Subsystem for Linux (WSL)](https://learn
 wsl --install -d Ubuntu
 ```
 
+To get WSL to install, you may also need to install [wsl_update_x64.msi](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package).
+
 Then, after this completes, launch the "Ubuntu" app and run these commands:
 
 ```
 sudo apt update
 sudo apt install pandoc texlive texlive-latex-extra xmlstarlet libxml2-utils
+```
+
+To get those commands to work, you may need to edit `/etc/wsl.conf` to contain:
+
+```
+[network]
+generatedResolvConf = false
+```
+
+And then edit `/etc/resolv.conf` to contain:
+
+```
+nameserver 8.8.8.8
+```
+
+You can edit those files with: `sudo vi {filename}` or `sudo nano {filename}`.
+
+Then try the `apt` commands (above) again.
+
+If all that works, then run:
+
+```
 cd ~
 git clone https://github.com/brianhigh/OpsReportCardBook.git
 cd ~/OpsReportCardBook
