@@ -68,8 +68,6 @@ people that prefer to read it in that format. Please check back often!
 
 ### 1.  Are user requests tracked via a ticket system?
 
-
-
 This is so basic it pains me that I have to explain it.
 
 Humans can't remember as well as computers. Expecting sysadmins to
@@ -131,8 +129,6 @@ For more info, see the below links:
     Software](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch13.html#ch13lev2sec10)
 
 ### 2.  Are "the 3 empowering policies" defined and published?
-
-
 
 There are three public-facing policies you must have if a sysadmin team
 is going to be able to get any work done. This is as much about serving
@@ -241,8 +237,6 @@ For more info, see the below links:
 
 ### 3.  Does the team record monthly metrics?
 
-
-
 You need to be data-driven when you make decisions or sway upper levels
 of management.
 
@@ -310,8 +304,6 @@ See below links for more information on this topic:
 
 ### 4.  Do you have a "policy and procedure" wiki?
 
-
-
 Your team needs a wiki. On it you can document all your policies (what
 should be done) and procedures (how it is done).
 
@@ -378,8 +370,6 @@ See below links for more information on this topic:
 
 ### 5.  Do you have a password safe?
 
-
-
 This shows you have a mature way to manage passwords.
 
 There are many excellent software-based password "vaults" systems.
@@ -397,8 +387,6 @@ See below links for more information on this topic:
     Policy](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html)
 
 ### 6.  Is your team's code kept in a source code control system?
-
-
 
 > When installing a new machine is an API call, we're all programmers
 > now.   
@@ -428,8 +416,6 @@ See below links for more information on this topic:
 
 ### 7.  Does your team use a bug-tracking system for their own code?
 
-
-
 Bug-tracking systems are different than ticket systems. If you have only
 occasional bugs (maybe your group doesn't write a lot of code) then
 filing help tickets for yourself is sufficient.
@@ -450,8 +436,6 @@ See below links for more information on this topic:
     Prioritization](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch08.html)
 
 ### 8.  In your bugs/tickets, does stability have a higher priority than new features?
-
-
 
 Adding new features is more fun than fixing bugs. Sadly we can't be fun
 here.
@@ -491,8 +475,6 @@ See below links for more information on this topic:
     Prioritization](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch08.html)
 
 ### 9.  Does your team write "design docs?"
-
-
 
 Good sysadmin teams "think before they do." On a larger team it is
 important to communicate what you are about to do, or what you have
@@ -541,8 +523,6 @@ See below links for more information on this topic:
 
 ### 10.  Do you have a "post-mortem" process?
 
-
-
 After a failure do you write up what happened so you can learn from it
 or do you just hope nobody notices and that it will all go away?
 
@@ -590,8 +570,6 @@ See below links for more information on this topic:
 ## C. Operational Practices
 
 ### 11.  Does each service have an OpsDoc?
-
-
 
 Your DNS server dies. You rebuild it because you know how. Cool, right?
 You need to compile the newest version of BIND and install it, and you
@@ -681,8 +659,6 @@ See below links for more information on this topic:
 
 ### 12.  Does each service have appropriate monitoring?
 
-
-
 > It isn't a service if it isn't monitored. If there is no monitoring
 > then you're just running software.   
 > _-Limoncelli_
@@ -705,8 +681,6 @@ See below links for more information on this topic:
     Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch05.html#ch05lev2sec13)
 
 ### 13.  Do you have a pager rotation schedule?
-
-
 
 Do you have a pager rotation schedule or are you a sucker that is simply
 on-call forever?
@@ -754,8 +728,6 @@ question.)
 
 ### 14.  Do you have separate development, QA, and production systems?
 
-
-
 Developers do their work on their development servers. When they think
 it is done packages are built and installed on the QA system. If QA and
 UAT (User Acceptance Testing) approves, the same packages are used to
@@ -788,8 +760,6 @@ See below links for more information on this topic:
     Upgrades](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch18.html)
 
 ### 15.  Do roll-outs to many machines have a "canary process?"
-
-
 
 Suppose you have to roll out a change to 500 machines. Maybe it is a new
 kernel. Maybe it is just a small bug-fix.
@@ -840,8 +810,6 @@ See below links for more information on this topic:
 
 ### 16.  Do you use configuration management tools like cfengine/puppet/chef?
 
-
-
 Config Management (CM) software is a tool that coordinates the
 configuration of machines. It might control the OS, the software, the
 service provided, or all of the above.
@@ -877,8 +845,6 @@ Mouse idea.
 
 ### 17.  Do automated administration tasks run under role accounts?
 
-
-
 Often we set up automated procedures that run at predetermined times.
 For example, a script that validates a database once a night.
 
@@ -889,8 +855,6 @@ Good sites run these scripts under some role account, often "root".
 However, it is safer to run them under an account with less privilege.
 
 ### 18.  Do automated processes that generate e-mail only do so when they have something to say?
-
-
 
 Do you know the story of "The Boy Who Cried Wolf"? What about: "The
 cron job that everyone ignored because it blasted everyone twice a day,
@@ -926,8 +890,6 @@ business?)
 
 ### 19.  Is there a database of all machines?
 
-
-
 Every site should know what machines it has. The database should store
 at least some basic attributes: OS, RAM, disk size, IP address,
 owner/funder, who to notify about maintenance, and so on.
@@ -959,8 +921,6 @@ machines that needed upgrades. Budgeting and work estimates could have
 been provided as part of the upgrade program.
 
 ### 20.  Is OS installation automated?
-
-
 
 Automated OS installations are faster, more consistent, and let the
 users do one more task so you don't have to.
@@ -1009,8 +969,6 @@ See below links for more information on this topic:
 
 ### 21.  Can you automatically patch software across your entire fleet?
 
-
-
 If OS installation is automated then all machines start out the same. If
 patching is automated then all machines stay current. Consistency is a
 good thing.
@@ -1049,8 +1007,6 @@ See below links for more information on this topic:
     Applications](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html#ch03lev2sec2)
 
 ### 22.  Do you have a PC refresh policy?
-
-
 
 If you don't have a policy about when PC will be replaced, they'll
 never be replaced.
@@ -1107,8 +1063,6 @@ See below links for more information on this topic:
 ## F. Disaster Preparation Practices
 
 ### 23.  Can your servers keep operating even if 1 disk dies?
-
-
 
 It used to be that if there was one broken component in a computer, you
 had an outage. In fact, one component failure equaled one outage. One
@@ -1201,8 +1155,6 @@ See below links for more information on this topic:
 
 ### 24.  Is the network core N+1?
 
-
-
 An outage for one person is a shame. An outage of many people is
 unacceptable. Just like redundant disks is now a minimum, duplicate
 network connectivity is, too.
@@ -1238,8 +1190,6 @@ See below links for more information on this topic:
     Networks](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch07.html)
 
 ### 25.  Are your backups automated?
-
-
 
 s question assumes you are doing backups. You are doing backups, right?
 
@@ -1286,8 +1236,6 @@ See below links for more information on this topic:
     Restore](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch26.html)
 
 ### 26.  Are your disaster recovery plans tested periodically?
-
-
 
 The last section was a bit of a lie. There aren't 4 reasons to do
 backups. There are 4 reasons to do restores.
@@ -1343,8 +1291,6 @@ See below links for more information on this topic:
 
 ### 27.  Do machines in your data center have remote power / console access?
 
-
-
 This needs little explanation. Remote consoles (IP-based KVM switches)
 are inexpensive; good servers have them built in. Remote power control
 isn't a luxury if the computer is more than a few miles away.
@@ -1363,8 +1309,6 @@ See below links for more information on this topic:
 ## G. Security Practices
 
 ### 28.  Do Desktops, laptops, and servers run self-updating, silent, anti-malware software?
-
-
 
 Viruses and malware are a fact of life. If you think bad things don't
 happen to good people then we all must be bad people. Every machine
@@ -1442,8 +1386,6 @@ See below links for more information on this topic:
 
 ### 29.  Do you have a written security policy?
 
-
-
 Looking at existing policies is a good way to get ideas. SANS has a
 library of samples:
 
@@ -1467,8 +1409,6 @@ See below links for more information on this topic:
 
 ### 30.  Do you submit to periodic security audits?
 
-
-
 This needs little explanation. If you aren't testing your security, you
 don't know how vulnerable you are.
 
@@ -1484,8 +1424,6 @@ See below links for more information on this topic:
     Audits](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev3sec16)
 
 ### 31.  Can a user's account be disabled on all systems in 1 hour?
-
-
 
 This indicates a lot more about your team and the environment you run
 than just whether or not you can disable an account. It indicates the
@@ -1513,8 +1451,6 @@ See below links for more information on this topic:
     Administrators](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch36.html)
 
 ### 32.  Can you change all privileged (root) passwords in 1 hour?
-
-
 
 This also indicates a lot more than what the question specifically asks.
 It indicates if your administrative access is well managed.
@@ -1568,5 +1504,5 @@ While we may someday release the document as a book, for the moment we
 operate entirely on tips for this project. Please feel free to donate!
 
 [(Donate)](http://www.opsreportcard.com/tipjar)
-width="1" height="1"}
+
 

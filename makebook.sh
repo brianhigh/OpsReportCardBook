@@ -144,6 +144,8 @@ perl -pi.bak -e 's/automation\/174/ch13.html/g;' "${OUT}.md"
 perl -pi.bak -e 's/^.*\.title\}$//g;' "${OUT}.md"
 perl -pi.bak -e 's/^# ("Ok, but... where do I start\?")$/## \1/g;' "${OUT}.md"
 perl -pi.bak -e 's/^# (How do users get help|What is an emergency|What is supported)\?$/#### \1\?/g;' "${OUT}.md"
+perl -pi.bak -e 's/^width="1" height="1"\}$//g;' "${OUT}.md"
+perl -00 -pi.bak -e 's/\n{4,}/\n\n/g;' "${OUT}.md"
 
 # ------------------
 # Output Generation
