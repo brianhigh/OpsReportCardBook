@@ -4,9 +4,71 @@ author: "Tom Limoncelli and Peter Grace"
 date: "[http://opsreportcard.com](http://opsreportcard.com)"
 ---
 
+## "Ok, but... where do I start?
+
+That's the question we hear over and over again. There are literally
+hundreds of "best practices" in system administration. Which are the
+most important? Where do I start?
+
+The Ops Report Card is a list of 32 fundamental "best practices" or
+"capabilities" that high performance sysadmin teams do. Use it as a
+checklist to examine where your team needs improvement.
+
+You'll find 32 "yes/no" questions to ask about your team. Each is
+followed by an essay explaining the issue, why it is important, and
+resources to help get you started.
+
+## Do assessments work?
+
+There is no magic here. It is possible to find a high-performing team
+that skips some of these best practices. However more likely than not
+that they don't. It is possible to find low-performing teams that
+incorporate all these best practices. However it is more likely that
+they do not. Adopting any one "best practice" may not improve your
+team. The problems may be deeper. Communication, maturity, skill and
+ability to execute can derail any best practice.
+
+People constantly ask me how they can improve their sysadmin team. It
+takes only a brief discussion to find fundamental gaps that, when
+filled, will improve the team's productivity and the quality of service
+being provided.
+
+These practices are fundamental. They are bedrock. Ignoring one creates
+a domino effect of other problems. These downstream problems multiply.
+If you are overworked maybe the solution isn't to work harder, but to
+fix the problem that is causing other problems.
+
+Don't spend all your time mopping the floor if you haven't fixed the
+leak.
+
+## How do I use the OpsReportCard?
+
+Answer the questions and count the number of yes's. That is your score.
+Most questions are self-explanatory with the exception of #2. Read the
+essay that follows each question to learn about the subject, why it is
+important, and resources to help you get started.
+
+## What should I tell my boss?
+
+There is nothing more frustrating than the knowledge that a better way
+exists. That said, we find it best to have your boss do the assessment
+him or herself.
+
+Do not become fanatical about this list. Do not implement a best
+practice just because it is on this list. Implement it if it will fix a
+real problem. Measure the effect and evaluate before moving on.
+
+## What's next?
+
+Over the next year we plan on improving this website, adding more
+resources and information. We also plan on making a PDF available for
+people that prefer to read it in that format. Please check back often!
+
 ## A. Public Facing Practices
 
 ### 1.  Are user requests tracked via a ticket system?
+
+
 
 This is so basic it pains me that I have to explain it.
 
@@ -54,7 +116,7 @@ ticket systems. I spend the 200xs pleased to see it become accepted
 practice. We are well into the third decade. If you don't have a way to
 track user requests at this point shame on you.
 
-For More Information
+#### For More Information
 
 For more info, see the below links:
 
@@ -69,6 +131,8 @@ For more info, see the below links:
     Software](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch13.html#ch13lev2sec10)
 
 ### 2.  Are "the 3 empowering policies" defined and published?
+
+
 
 There are three public-facing policies you must have if a sysadmin team
 is going to be able to get any work done. This is as much about serving
@@ -162,7 +226,7 @@ user's house fixing their Internet connection. Alternatively a
 curmudgeonly sysadmin will tell people something isn't supported just
 because they're busy.
 
-For More Information
+#### For More Information
 
 For more info, see the below links:
 
@@ -176,6 +240,8 @@ For more info, see the below links:
     Resources](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev3sec1)
 
 ### 3.  Does the team record monthly metrics?
+
+
 
 You need to be data-driven when you make decisions or sway upper levels
 of management.
@@ -229,22 +295,22 @@ Ultimately collecting these metrics should be automated. Until then,
 generate email to yourself on the first of each month with a reminder to
 do it manually.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 523, [Chapter 22: Service 
-    Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch22.html)
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 119, [Chapter 5: Services / 5.1.13 
-    Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch05.html#ch05lev2sec13)
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 765, [Chapter 31: Perception and Visibility / 31.2.1 The System Status Web
-    Page](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch31.html#ch31lev2sec5)
--   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 849, [Chapter 33: A Guide for Technical Managers / 33.2.2 Sell Your Department to 
-    Senior Management](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev2sec6)
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 22: Service Monitoring
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 5: Services / 5.1.13 Monitoring
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 31: Perception and Visibility / The System
+    Status Web Page
+-   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - Chapter 33: A Guide for Technical Managers / Sell Your
+    Department to Senior Management
 
 ## B. Modern Team Practices
 
 ### 4.  Do you have a "policy and procedure" wiki?
+
+
 
 Your team needs a wiki. On it you can document all your policies (what
 should be done) and procedures (how it is done).
@@ -301,7 +367,7 @@ it with the following steps, etc. Policy are only changed with
 management approval. Procedures are changed by the technicians, with
 change notifications sent to the author or other authority.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -312,6 +378,8 @@ See below links for more information on this topic:
 
 ### 5.  Do you have a password safe?
 
+
+
 This shows you have a mature way to manage passwords.
 
 There are many excellent software-based password "vaults" systems.
@@ -321,7 +389,7 @@ The problem is often verification. How do you know that an evil
 co-worker isn't putting the wrong password in those envelopes? If you
 are that paranoid have a different person verify any new passwords.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -330,8 +398,11 @@ See below links for more information on this topic:
 
 ### 6.  Is your team's code kept in a source code control system?
 
+
+
 > When installing a new machine is an API call, we're all programmers
-> now. -Limoncelli, on cloud computing, devops, and the importance of
+> now.   
+> _-Limoncelli, on cloud computing, devops, and the importance of_
 > developer skills in system administration.
 
 We're all programmers now. Programmers use source code control.
@@ -346,10 +417,9 @@ feeling like a luxury and ends up becoming a lifesaver.
 Anything is better than nothing. Use what your developers use. No
 developers? Learn Git, Mercurial, or even Subversion. Desperate for a
 quick way to save configuration files history?
-<http://www.nightcoder.com/code/xed> (It is a wrapper that calls
-$EDITOR.)
+[http://www.nightcoder.com/code/xed](http://www.nightcoder.com/code/xed) (It is a wrapper that calls $EDITOR.)
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -357,6 +427,8 @@ See below links for more information on this topic:
     xed](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch13.html)
 
 ### 7.  Does your team use a bug-tracking system for their own code?
+
+
 
 Bug-tracking systems are different than ticket systems. If you have only
 occasional bugs (maybe your group doesn't write a lot of code) then
@@ -368,16 +440,18 @@ request ticket systems. Ticket systems are a communication tool between
 you and your users. Bug-tracking systems track the bug lifecycle
 (report, verify, assign, fix, close, verify).
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
 -   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 343, [Chapter 33: A Guide for Technical Managers /
-    Priorities](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev3sec1)
+    Priorities](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev2sec6)
 -   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20) - p. 101, [Chapter 8: Prioritization /
     Prioritization](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch08.html)
 
 ### 8.  In your bugs/tickets, does stability have a higher priority than new features?
+
+
 
 Adding new features is more fun than fixing bugs. Sadly we can't be fun
 here.
@@ -407,16 +481,18 @@ are bleeding to death.
 The priority of "performance bugs" is up for debate. In some places
 performance is the same as stability.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
 -   [P2](http://www.amazon.com/o/ASIN/0321492668/tomontime-20) - p. 343, [Chapter 33: A Guide for Technical Managers /
-    Priorities](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev3sec1)
+    Priorities](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch33.html#ch33lev2sec6)
 -   [TM](http://www.amazon.com/o/ASIN/0596007833/tomontime-20) - p. 101, [Chapter 8: Prioritization /
     Prioritization](https://learning.oreilly.com/library/view/time-management-for/0596007833/ch08.html)
 
 ### 9.  Does your team write "design docs?"
+
+
 
 Good sysadmin teams "think before they do." On a larger team it is
 important to communicate what you are about to do, or what you have
@@ -456,7 +532,7 @@ headings. Be flexible. Have a "short form" and "long form". Having a
 standard template that people can use as a starting point avoids the
 "blank page syndrome".
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -464,6 +540,8 @@ See below links for more information on this topic:
     Documentation](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch09.html)
 
 ### 10.  Do you have a "post-mortem" process?
+
+
 
 After a failure do you write up what happened so you can learn from it
 or do you just hope nobody notices and that it will all go away?
@@ -502,7 +580,7 @@ more. Transparency breeds trust.
 Of course, to really develop confidence all those bugs and tickets filed
 as a result need to actually get worked on.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -512,6 +590,8 @@ See below links for more information on this topic:
 ## C. Operational Practices
 
 ### 11.  Does each service have an OpsDoc?
+
+
 
 Your DNS server dies. You rebuild it because you know how. Cool, right?
 You need to compile the newest version of BIND and install it, and you
@@ -592,7 +672,7 @@ bigger service. Create the skeleton so others can use it as a template
 and just fill in the missing pieces. Get in the habit of starting a new
 opsdoc any time you begin a new project.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -601,15 +681,18 @@ See below links for more information on this topic:
 
 ### 12.  Does each service have appropriate monitoring?
 
+
+
 > It isn't a service if it isn't monitored. If there is no monitoring
-> then you're just running software. -Limoncelli
+> then you're just running software.   
+> _-Limoncelli_
 
 The monitoring should be based on the SLA from the OpsDoc. If you don't
 have an SLA, simple "up/down" alerting is the minimum.
 
 Don't forget to update the Pager Playbook.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -622,6 +705,8 @@ See below links for more information on this topic:
     Monitoring](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch05.html#ch05lev2sec13)
 
 ### 13.  Do you have a pager rotation schedule?
+
+
 
 Do you have a pager rotation schedule or are you a sucker that is simply
 on-call forever?
@@ -669,6 +754,8 @@ question.)
 
 ### 14.  Do you have separate development, QA, and production systems?
 
+
+
 Developers do their work on their development servers. When they think
 it is done packages are built and installed on the QA system. If QA and
 UAT (User Acceptance Testing) approves, the same packages are used to
@@ -693,7 +780,7 @@ big physical machine.
 Obviously if scaling and response time are important it is more likely
 you'll need a QA system that more closely resembles the live system.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -701,6 +788,8 @@ See below links for more information on this topic:
     Upgrades](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch18.html)
 
 ### 15.  Do roll-outs to many machines have a "canary process?"
+
+
 
 Suppose you have to roll out a change to 500 machines. Maybe it is a new
 kernel. Maybe it is just a small bug-fix.
@@ -740,7 +829,7 @@ This procedure can be done manually but if you use a configuration
 management system, the ability to do canaries should be "baked in" to
 the system.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -750,6 +839,8 @@ See below links for more information on this topic:
 ## D. Automation Practices
 
 ### 16.  Do you use configuration management tools like cfengine/puppet/chef?
+
+
 
 Config Management (CM) software is a tool that coordinates the
 configuration of machines. It might control the OS, the software, the
@@ -777,7 +868,7 @@ With CM, instead of manual changes, you change a configuration file and
 let the CM system do the work.
 
 Local changes on a server are not ok. Any time you create a file like
-/etc/crontab.bak or /etc/hosts.[today's date] it is a red flag that
+`/etc/crontab.bak` or `/etc/hosts.[today's date]` it is a red flag that
 you are doing it wrong.
 
 Configuration management is the ultimate automation. You go from being
@@ -785,6 +876,8 @@ the The Sorcerer's Apprentice to the puppet master. That's no Mickey
 Mouse idea.
 
 ### 17.  Do automated administration tasks run under role accounts?
+
+
 
 Often we set up automated procedures that run at predetermined times.
 For example, a script that validates a database once a night.
@@ -796,6 +889,8 @@ Good sites run these scripts under some role account, often "root".
 However, it is safer to run them under an account with less privilege.
 
 ### 18.  Do automated processes that generate e-mail only do so when they have something to say?
+
+
 
 Do you know the story of "The Boy Who Cried Wolf"? What about: "The
 cron job that everyone ignored because it blasted everyone twice a day,
@@ -817,18 +912,21 @@ on the sysadmin team via email. Your email system is not a good log
 archive.
 
 True story: A friend in NYC worked at a site where all automated
-processes sent their output as email to <root@the-company-domain>.
-"root" was a mailing list that went to all the sysadmins in the
-company. It was a constant flood of messages. Sysadmins at this company
-literally could not read email. No amount of filtering would be enough.
-As a result, the sysadmins for this company used their personal email
-accounts for all communication, even stuff that was work-related. What
-company was this? A major email provider that is no longer in business.
-(I wonder what other bad decisions helped put them out of business?)
+processes sent their output as email to
+[root@the-company-domain](mailto:root@the-company-domain). "root" was a mailing list that went to all the sysadmins
+in the company. It was a constant flood of messages. Sysadmins at this
+company literally could not read email. No amount of filtering would be
+enough. As a result, the sysadmins for this company used their personal
+email accounts for all communication, even stuff that was work-related.
+What company was this? A major email provider that is no longer in
+business. (I wonder what other bad decisions helped put them out of
+business?)
 
 ## E. Fleet Management Processes
 
 ### 19.  Is there a database of all machines?
+
+
 
 Every site should know what machines it has. The database should store
 at least some basic attributes: OS, RAM, disk size, IP address,
@@ -862,6 +960,8 @@ been provided as part of the upgrade program.
 
 ### 20.  Is OS installation automated?
 
+
+
 Automated OS installations are faster, more consistent, and let the
 users do one more task so you don't have to.
 
@@ -894,7 +994,7 @@ A machine should be wiped and reloaded when a "hand me down" computer
 moves from one user to another. If this process isn't "friction free"
 there is temptation to "save time" by not doing it.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -908,6 +1008,8 @@ See below links for more information on this topic:
     Infrastructure](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11sb14)
 
 ### 21.  Can you automatically patch software across your entire fleet?
+
+
 
 If OS installation is automated then all machines start out the same. If
 patching is automated then all machines stay current. Consistency is a
@@ -938,7 +1040,7 @@ update. However, there should be a limit; maybe 2 weeks. However the
 deadline should be adjustable so that emergency security fixes can
 happen sooner.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -947,6 +1049,8 @@ See below links for more information on this topic:
     Applications](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch03.html#ch03lev2sec2)
 
 ### 22.  Do you have a PC refresh policy?
+
+
 
 If you don't have a policy about when PC will be replaced, they'll
 never be replaced.
@@ -993,7 +1097,7 @@ schedule: they are designed to last longer and are on a 4-year
 depreciation schedule. On the other hand, their cost is amortized over
 all their users and therefore you can justify a 2-year schedule.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1003,6 +1107,8 @@ See below links for more information on this topic:
 ## F. Disaster Preparation Practices
 
 ### 23.  Can your servers keep operating even if 1 disk dies?
+
+
 
 It used to be that if there was one broken component in a computer, you
 had an outage. In fact, one component failure equaled one outage. One
@@ -1039,7 +1145,7 @@ expect a failure every week. Are you really planning to spend an entire
 day restoring data from tape that often?
 
 My rule of thumb is simple: For small servers the boot disk should be
-mirrored and any disk with user data should be RAID1 or higher.
+mirrrored and any disk with user data should be RAID1 or higher.
 
 Boot disk: I recommend mirroring the boot disk of every server because
 it is usually impossible to rebuild from scratch. Server boot disks tend
@@ -1056,7 +1162,7 @@ system that lets people in and out of the buildings is exactly the
 worst-case scenario that needs a mirrored boot disk.
 
 Yes, you could probably rebuild such a server in a day if you are lucky,
-but a RAID1 controller is less than that in salary if you work minimum
+but a RAID1 controler is less than that in salary if you work minimum
 wage.
 
 User data: I recommend RAID1 or higher for user data just because it is
@@ -1066,7 +1172,7 @@ professionally negligent to use RAID5 on such disks. RAID6 or RAID10 is
 the minimum; at least for now, but I digress.
 
 The exceptions to all this is any place where the service can keep
-running if individual components die whether the redundancy is at the
+running if individual components die whether the redundency is at the
 disk level, the machine level, or the data center level. Also, data that
 can be reconstructed from scratch within the SLA. Here are some
 examples:
@@ -1086,7 +1192,7 @@ examples:
     automatically. If you have hundreds of them the savings from not
     buying RAID cards can be dramatic.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1094,6 +1200,8 @@ See below links for more information on this topic:
     Disks](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch04.html#ch04lev2sec9)
 
 ### 24.  Is the network core N+1?
+
+
 
 An outage for one person is a shame. An outage of many people is
 unacceptable. Just like redundant disks is now a minimum, duplicate
@@ -1122,7 +1230,7 @@ Exception: Sites small enough that they don't have a core. Even then
 all trunks should be redundant and a "spares kit" should exist for
 each kind of hardware device.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1131,7 +1239,9 @@ See below links for more information on this topic:
 
 ### 25.  Are your backups automated?
 
-This question assumes you are doing backups. You are doing backups, right?
+
+
+s question assumes you are doing backups. You are doing backups, right?
 
 You need backups for 4 reasons:
 
@@ -1168,7 +1278,7 @@ For any of these reasons the process must be automated. As the building
 burns down you don't want to have to inform management that the data is
 lost because "I was on vacation" or "I forgot".
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1176,6 +1286,8 @@ See below links for more information on this topic:
     Restore](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch26.html)
 
 ### 26.  Are your disaster recovery plans tested periodically?
+
+
 
 The last section was a bit of a lie. There aren't 4 reasons to do
 backups. There are 4 reasons to do restores.
@@ -1220,7 +1332,7 @@ lets suppose you got paged with this message. Tell me the commands you
 type and the actions you take." Another method is to permit your CEO to
 walk into the data center and unplug any cable of his or her choosing.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1231,6 +1343,8 @@ See below links for more information on this topic:
 
 ### 27.  Do machines in your data center have remote power / console access?
 
+
+
 This needs little explanation. Remote consoles (IP-based KVM switches)
 are inexpensive; good servers have them built in. Remote power control
 isn't a luxury if the computer is more than a few miles away.
@@ -1239,7 +1353,7 @@ The exception to this rule is grid computing systems with hundreds or
 thousands of identical machines. If one fails another can take its
 place.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1249,6 +1363,8 @@ See below links for more information on this topic:
 ## G. Security Practices
 
 ### 28.  Do Desktops, laptops, and servers run self-updating, silent, anti-malware software?
+
+
 
 Viruses and malware are a fact of life. If you think bad things don't
 happen to good people then we all must be bad people. Every machine
@@ -1311,7 +1427,7 @@ requirement. These are my personal rules:
     as you can maintain on your server. Stop the problem before it gets
     to the client.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1326,15 +1442,17 @@ See below links for more information on this topic:
 
 ### 29.  Do you have a written security policy?
 
+
+
 Looking at existing policies is a good way to get ideas. SANS has a
 library of samples:
 
-<http://www.sans.org/security-resources/policies/>
+[http://www.sans.org/security-resources/policies/](http://www.sans.org/security-resources/policies/)
 
 It is critical to have a written security policy before you implement
 it.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1349,10 +1467,12 @@ See below links for more information on this topic:
 
 ### 30.  Do you submit to periodic security audits?
 
+
+
 This needs little explanation. If you aren't testing your security, you
 don't know how vulnerable you are.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1364,6 +1484,8 @@ See below links for more information on this topic:
     Audits](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch11.html#ch11lev3sec16)
 
 ### 31.  Can a user's account be disabled on all systems in 1 hour?
+
+
 
 This indicates a lot more about your team and the environment you run
 than just whether or not you can disable an account. It indicates the
@@ -1381,7 +1503,7 @@ beyond. What if a user's name changes? What if someone rejoins the
 company? What if they rejoin the company and their name has changed?
 There are a lot of "edge cases" they must be able to handle.
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1391,6 +1513,8 @@ See below links for more information on this topic:
     Administrators](https://learning.oreilly.com/library/view/the-practice-of/9780321545275/ch36.html)
 
 ### 32.  Can you change all privileged (root) passwords in 1 hour?
+
+
 
 This also indicates a lot more than what the question specifically asks.
 It indicates if your administrative access is well managed.
@@ -1405,7 +1529,7 @@ If you do have this ability, create a wiki page that documents how to
 activate the process (and then list all the exceptions that are still
 manual).
 
-For More Information
+#### For More Information
 
 See below links for more information on this topic:
 
@@ -1421,7 +1545,7 @@ administrator. His best known books include Time Management for System
 Administrators (OReilly) and The Practice of System and Network
 Administration (Addison-Wesley). In 2005 he received the SAGE
 Outstanding Achievement Award. He works in New York City at Stack
-Exchange, home of ServerFault.com and StackOverflow.com. Previously he's
+Exchange, home of ServerFault.com and StackOverflow.com. Previously hes
 worked at small and large companies including Google, Bell Labs /
 Lucent, AT&T. <http://EverythingSysadmin.com> is his blog. His new book,
 "The Practice of Cloud Administration" is due out in September 2014.
@@ -1444,4 +1568,5 @@ While we may someday release the document as a book, for the moment we
 operate entirely on tips for this project. Please feel free to donate!
 
 [(Donate)](http://www.opsreportcard.com/tipjar)
+width="1" height="1"}
 
