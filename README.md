@@ -1,7 +1,7 @@
 # OpsReportCardBook
 
 Compile the [OpsReportCard](http://www.opsreportcard.com) into various book 
-formats. This has been tested on Ubuntu Linux 14.04 and 17.04, macOS High Sierra, 
+formats. This has been tested on Ubuntu Linux 14.04 and 17.04, macOS Sonoma, 
 and Windows Server 2008 R2 and Windows 10 Enterprise. If this were refactored 
 into something more portable like a Python script, it would be easier to run, 
 but for now it is a Bash script that calls several utilities and Perl. 
