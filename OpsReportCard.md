@@ -4,7 +4,7 @@ author: "Tom Limoncelli and Peter Grace"
 date: "[http://opsreportcard.com](http://opsreportcard.com)"
 ---
 
-## "Ok, but... where do I start?
+## "Ok, but... where do I start?"
 
 That's the question we hear over and over again. There are literally
 hundreds of "best practices" in system administration. Which are the
