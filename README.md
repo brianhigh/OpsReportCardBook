@@ -35,10 +35,10 @@ If you are using macOS, you may want to install the `wget`, `pandoc`,
 running `makebook.sh`.
 
 ```
-brew install wget --with-libressl
+brew install wget
 brew install pandoc
 brew install xmlstarlet
-brew cask install basictex
+brew install basictex --cask      # Restart your Terminal session after this
 sudo tlmgr update --self
 sudo tlmgr install collection-fontsrecommended
 sudo tlmgr install titling
